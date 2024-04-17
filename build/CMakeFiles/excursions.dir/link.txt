@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/excursions.dir/main.cpp.o CMakeFiles/excursions.dir/model/excursion.cpp.o CMakeFiles/excursions.dir/model/partner/partner.cpp.o CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o -o excursions 

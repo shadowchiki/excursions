@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-a9ccfaef11edd17718f6.json",
+					"jsonFile" : "directory-.-Debug-64d20d384df546a453a7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "excursions::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-excursions-Debug-594ae4ef9fec827231f9.json",
+					"jsonFile" : "target-excursions-Debug-b5224297bdb256fb9f98.json",
 					"name" : "excursions",
 					"projectIndex" : 0
 				}

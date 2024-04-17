@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/excursions.dir/model/partner/partner.cpp.o.d"
   "CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o"
   "CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o.d"
-  "CMakeFiles/excursions.dir/model/secure/secure.cpp.o"
-  "CMakeFiles/excursions.dir/model/secure/secure.cpp.o.d"
   "excursions"
   "excursions.pdb"
 )

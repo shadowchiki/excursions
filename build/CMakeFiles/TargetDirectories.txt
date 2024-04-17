@@ -1,0 +1,7 @@
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/excursions.dir
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/edit_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/rebuild_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/list_install_components.dir
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/install.dir
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/install/local.dir
+/home/alejandro/workspace/cpp/excursions/build/CMakeFiles/install/strip.dir
