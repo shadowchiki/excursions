@@ -7,7 +7,5 @@ int main()
 {
     cout << "Hello World!" << endl;
 
-    Partner* partner = new FederatedPartner();
-
     return 0;
 }

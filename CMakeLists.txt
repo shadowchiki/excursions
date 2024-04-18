@@ -28,7 +28,7 @@ add_executable(${PROJECT_NAME} main.cpp
     utils/date/datefilterfactory.h utils/date/datefilterfactory.cpp
     utils/date/betweendatefilter.h utils/date/betweendatefilter.cpp
     utils/date/enddatefilter.h utils/date/enddatefilter.cpp
-    utils/date/test/datefactorytest.cpp
+    utils/date/test/datefactory_test.cpp
 
 
 )

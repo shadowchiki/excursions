@@ -3,11 +3,11 @@
 
 #include "../excursiondao.h"
 
-class ExcursionDaoFileImpl : ExcursionDao
+class ExcursionDaoFileImpl : public ExcursionDao
 {
 private:
     const std::string FILE_ROUTE = "../../../filedb/excursions.txt";
-    Excursion* map(string line);
+    Excursion* map(std::string line);
     std::vector<Excursion*> filterByDate(std::string startDate, std::string endDate);
 public:
     ExcursionDaoFileImpl();

@@ -307,19 +307,19 @@ CMakeFiles/excursions.dir/utils/date/enddatefilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/utils/date/enddatefilter.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/utils/date/enddatefilter.cpp -o CMakeFiles/excursions.dir/utils/date/enddatefilter.cpp.s
 
-CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o: CMakeFiles/excursions.dir/flags.make
-CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o: ../../utils/date/test/datefactorytest.cpp
-CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o -MF CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o.d -o CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o -c /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactorytest.cpp
+CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o: CMakeFiles/excursions.dir/flags.make
+CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o: ../../utils/date/test/datefactory_test.cpp
+CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o -MF CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o.d -o CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o -c /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactory_test.cpp
 
-CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactorytest.cpp > CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.i
+CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactory_test.cpp > CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.i
 
-CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactorytest.cpp -o CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.s
+CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactory_test.cpp -o CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.s
 
 # Object files for target excursions
 excursions_OBJECTS = \
@@ -340,7 +340,7 @@ excursions_OBJECTS = \
 "CMakeFiles/excursions.dir/utils/date/datefilterfactory.cpp.o" \
 "CMakeFiles/excursions.dir/utils/date/betweendatefilter.cpp.o" \
 "CMakeFiles/excursions.dir/utils/date/enddatefilter.cpp.o" \
-"CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o"
+"CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o"
 
 # External object files for target excursions
 excursions_EXTERNAL_OBJECTS =
@@ -362,7 +362,7 @@ excursions: CMakeFiles/excursions.dir/utils/date/startdatefilter.cpp.o
 excursions: CMakeFiles/excursions.dir/utils/date/datefilterfactory.cpp.o
 excursions: CMakeFiles/excursions.dir/utils/date/betweendatefilter.cpp.o
 excursions: CMakeFiles/excursions.dir/utils/date/enddatefilter.cpp.o
-excursions: CMakeFiles/excursions.dir/utils/date/test/datefactorytest.cpp.o
+excursions: CMakeFiles/excursions.dir/utils/date/test/datefactory_test.cpp.o
 excursions: CMakeFiles/excursions.dir/build.make
 excursions: lib/libgtest_main.a
 excursions: lib/libgtest.a

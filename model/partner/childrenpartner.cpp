@@ -1,8 +1,8 @@
 #include "childrenpartner.h"
 
-ChildrenPartner::ChildrenPartner()
+ChildrenPartner::ChildrenPartner(Partner* parent)
 {
-
+    this->parent = parent;
 }
 
 int ChildrenPartner::discount(){

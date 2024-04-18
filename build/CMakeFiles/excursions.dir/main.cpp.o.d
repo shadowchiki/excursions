@@ -147,4 +147,5 @@ CMakeFiles/excursions.dir/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/alejandro/workspace/cpp/excursions/model/partner/federatedpartner.h \
- /home/alejandro/workspace/cpp/excursions/model/partner/partner.h
+ /home/alejandro/workspace/cpp/excursions/model/partner/partner.h \
+ /home/alejandro/workspace/cpp/excursions/model/partner/../secure.h
