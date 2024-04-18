@@ -13,8 +13,15 @@ private:
 
 public:
     Excursion();
+    Excursion(std::string id,
+              std::string description,
+              std::string date,
+              long price,
+              int durationDays);
     ~Excursion();
-    std::String getId();
+    std::string getId();
+    std::string getDate();
+
 };
 
 #endif // EXCURSION_H

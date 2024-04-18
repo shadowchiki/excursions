@@ -153,6 +153,76 @@ CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/model/partner/childrenpartner.cpp -o CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.s
 
+CMakeFiles/excursions.dir/model/secure.cpp.o: CMakeFiles/excursions.dir/flags.make
+CMakeFiles/excursions.dir/model/secure.cpp.o: ../model/secure.cpp
+CMakeFiles/excursions.dir/model/secure.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/excursions.dir/model/secure.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/model/secure.cpp.o -MF CMakeFiles/excursions.dir/model/secure.cpp.o.d -o CMakeFiles/excursions.dir/model/secure.cpp.o -c /home/alejandro/workspace/cpp/excursions/model/secure.cpp
+
+CMakeFiles/excursions.dir/model/secure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/model/secure.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/model/secure.cpp > CMakeFiles/excursions.dir/model/secure.cpp.i
+
+CMakeFiles/excursions.dir/model/secure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/model/secure.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/model/secure.cpp -o CMakeFiles/excursions.dir/model/secure.cpp.s
+
+CMakeFiles/excursions.dir/model/federation.cpp.o: CMakeFiles/excursions.dir/flags.make
+CMakeFiles/excursions.dir/model/federation.cpp.o: ../model/federation.cpp
+CMakeFiles/excursions.dir/model/federation.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/excursions.dir/model/federation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/model/federation.cpp.o -MF CMakeFiles/excursions.dir/model/federation.cpp.o.d -o CMakeFiles/excursions.dir/model/federation.cpp.o -c /home/alejandro/workspace/cpp/excursions/model/federation.cpp
+
+CMakeFiles/excursions.dir/model/federation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/model/federation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/model/federation.cpp > CMakeFiles/excursions.dir/model/federation.cpp.i
+
+CMakeFiles/excursions.dir/model/federation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/model/federation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/model/federation.cpp -o CMakeFiles/excursions.dir/model/federation.cpp.s
+
+CMakeFiles/excursions.dir/model/inscription.cpp.o: CMakeFiles/excursions.dir/flags.make
+CMakeFiles/excursions.dir/model/inscription.cpp.o: ../model/inscription.cpp
+CMakeFiles/excursions.dir/model/inscription.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/excursions.dir/model/inscription.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/model/inscription.cpp.o -MF CMakeFiles/excursions.dir/model/inscription.cpp.o.d -o CMakeFiles/excursions.dir/model/inscription.cpp.o -c /home/alejandro/workspace/cpp/excursions/model/inscription.cpp
+
+CMakeFiles/excursions.dir/model/inscription.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/model/inscription.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/model/inscription.cpp > CMakeFiles/excursions.dir/model/inscription.cpp.i
+
+CMakeFiles/excursions.dir/model/inscription.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/model/inscription.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/model/inscription.cpp -o CMakeFiles/excursions.dir/model/inscription.cpp.s
+
+CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o: CMakeFiles/excursions.dir/flags.make
+CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o: ../controller/excursioncontroller.cpp
+CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o -MF CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o.d -o CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o -c /home/alejandro/workspace/cpp/excursions/controller/excursioncontroller.cpp
+
+CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/controller/excursioncontroller.cpp > CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.i
+
+CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/controller/excursioncontroller.cpp -o CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.s
+
+CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o: CMakeFiles/excursions.dir/flags.make
+CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o: ../controller/dao/impl/excursiondaofileimpl.cpp
+CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o: CMakeFiles/excursions.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o -MF CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o.d -o CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o -c /home/alejandro/workspace/cpp/excursions/controller/dao/impl/excursiondaofileimpl.cpp
+
+CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alejandro/workspace/cpp/excursions/controller/dao/impl/excursiondaofileimpl.cpp > CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.i
+
+CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alejandro/workspace/cpp/excursions/controller/dao/impl/excursiondaofileimpl.cpp -o CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.s
+
 # Object files for target excursions
 excursions_OBJECTS = \
 "CMakeFiles/excursions.dir/main.cpp.o" \
@@ -160,7 +230,12 @@ excursions_OBJECTS = \
 "CMakeFiles/excursions.dir/model/partner/partner.cpp.o" \
 "CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o" \
 "CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o" \
-"CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o"
+"CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o" \
+"CMakeFiles/excursions.dir/model/secure.cpp.o" \
+"CMakeFiles/excursions.dir/model/federation.cpp.o" \
+"CMakeFiles/excursions.dir/model/inscription.cpp.o" \
+"CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o" \
+"CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o"
 
 # External object files for target excursions
 excursions_EXTERNAL_OBJECTS =
@@ -171,9 +246,14 @@ excursions: CMakeFiles/excursions.dir/model/partner/partner.cpp.o
 excursions: CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o
 excursions: CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o
 excursions: CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o
+excursions: CMakeFiles/excursions.dir/model/secure.cpp.o
+excursions: CMakeFiles/excursions.dir/model/federation.cpp.o
+excursions: CMakeFiles/excursions.dir/model/inscription.cpp.o
+excursions: CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o
+excursions: CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o
 excursions: CMakeFiles/excursions.dir/build.make
 excursions: CMakeFiles/excursions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable excursions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejandro/workspace/cpp/excursions/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable excursions"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/excursions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

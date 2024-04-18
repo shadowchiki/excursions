@@ -2,26 +2,61 @@ cmake_minimum_required(VERSION 3.5)
 
 project(excursions LANGUAGES CXX)
 
+#[[set crea variables a utilizar en el fichero]]
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(excursions main.cpp
+#[[
+    Añade al ejecutable las clases necesarias para compilar
+]]
+add_executable(${PROJECT_NAME} main.cpp
     model/excursion.h model/excursion.cpp
     model/partner/partner.h model/partner/partner.cpp
     model/partner/standarpartner.h model/partner/standarpartner.cpp
     model/partner/federatedpartner.h model/partner/federatedpartner.cpp
     model/partner/childrenpartner.h model/partner/childrenpartner.cpp
-    model/secure/secure.h model/secure/secure.cpp
+    model/secure.h model/secure.cpp
     model/federation.h model/federation.cpp
     model/inscription.h model/inscription.cpp
     controller/excursioncontroller.h controller/excursioncontroller.cpp
-    controller/dao/excursiondao.h controller/dao/excursiondao.cpp
-    controller/dao/impl/excursiondaoimpl.cpp
+    controller/dao/excursiondao.h
+    controller/dao/impl/excursiondaofileimpl.cpp
     controller/dao/impl/excursiondaofileimpl.h
+    utils/dateutils.h utils/dateutils.cpp
+    utils/date/datefilter.h utils/date/datefilter.cpp
+    utils/date/startdatefilter.h utils/date/startdatefilter.cpp
+    utils/date/datefilterfactory.h utils/date/datefilterfactory.cpp
+    utils/date/betweendatefilter.h utils/date/betweendatefilter.cpp
+    utils/date/enddatefilter.h utils/date/enddatefilter.cpp
+    utils/date/test/datefactorytest.cpp
+
+
 )
 
 include(GNUInstallDirs)
-install(TARGETS excursions
+install(TARGETS ${PROJECT_NAME}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  # Specify the commit you depend on and update it regularly.
+  URL https://github.com/google/googletest/archive/5376968f6948923e2411081fd9372e71a59d8e77.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+target_link_libraries(${PROJECT_NAME} gtest_main)
+add_test(NAME example_test COMMAND example)
+
+#[[Crea funciones a ejecutar en el fichero
+EL primer valor es el nombre del metodo y el siguiente es un parametro
+]]
+function(methodName param)
+    message("${${param}}")
+endfunction()
+
+#[[ejecuta la funcion creada previamente]]
+methodName(PROJECT_NAME)
