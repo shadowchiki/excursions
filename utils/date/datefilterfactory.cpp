@@ -8,17 +8,16 @@ DateFilterFactory::DateFilterFactory()
 
 }
 
-DateFilter DateFilterFactory::getFilter(std::string startDate,
-                     std::string endDate){
+DateFilter* DateFilterFactory::getFilter(std::string startDate, std::string endDate){
 
     if(!startDate.empty() && !endDate.empty()){
-        return BetweenDateFilter(startDate, endDate);
+        return new BetweenDateFilter(startDate, endDate);
     } else if(!startDate.empty() && endDate.empty()){
-        return StartDateFilter(startDate);
-    } else if(!endDate.empty && startDate.empty()){
-        return EndDateFilter(endDate);
+        return new StartDateFilter(startDate);
+    } else if(!endDate.empty() && startDate.empty()){
+        return new EndDateFilter(endDate);
     }
 
-    return null_ptr;
+    return nullptr;
 
 }

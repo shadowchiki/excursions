@@ -16,3 +16,13 @@ Excursion::Excursion(std::string id,
     this->price = price;
     this->durationDays = durationDays;
 }
+
+std::string Excursion::getId()
+{
+    return this->getId();
+}
+
+std::string Excursion::getDate()
+{
+    return this->getDate();
+}

@@ -22,15 +22,6 @@ add_executable(${PROJECT_NAME} main.cpp
     controller/dao/excursiondao.h
     controller/dao/impl/excursiondaofileimpl.cpp
     controller/dao/impl/excursiondaofileimpl.h
-    utils/dateutils.h utils/dateutils.cpp
-    utils/date/datefilter.h utils/date/datefilter.cpp
-    utils/date/startdatefilter.h utils/date/startdatefilter.cpp
-    utils/date/datefilterfactory.h utils/date/datefilterfactory.cpp
-    utils/date/betweendatefilter.h utils/date/betweendatefilter.cpp
-    utils/date/enddatefilter.h utils/date/enddatefilter.cpp
-    utils/date/test/datefactory_test.cpp
-
-
 )
 
 include(GNUInstallDirs)
@@ -50,6 +41,9 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 target_link_libraries(${PROJECT_NAME} gtest_main)
 add_test(NAME example_test COMMAND example)
+
+add_subdirectory(utils/date/)
+target_link_libraries(${PROJECT_NAME} dateutils)
 
 #[[Crea funciones a ejecutar en el fichero
 EL primer valor es el nombre del metodo y el siguiente es un parametro

@@ -4,8 +4,8 @@
 TEST(DateFilterFactoryTests, FactoryTesting)
 {
 
-    DateFilterFactory factory();
-    DateFilter* filter = factory.getFilter(null, null);
+    DateFilterFactory factory;
+    DateFilter* filter = factory.getFilter("", "");
     filter->filter("");
 
 

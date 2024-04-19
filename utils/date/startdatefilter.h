@@ -5,8 +5,7 @@
 class StartDateFilter : public DateFilter
 {
 public:
-    StartDateFilter(std::string date,
-                    std::string startDate);
+    StartDateFilter(std::string startDate);
     virtual bool filter(std::string date);
 };
 

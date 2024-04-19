@@ -1,18 +1,18 @@
 #ifndef DATEFILTER_H
 #define DATEFILTER_H
 #include <string>
-#include "../dateutils.h"
+#include "dateutils.h"
 
 class DateFilter
 {
-private:
+protected:
     DateUtils dateUtils;
     std::string startDate;
     std::string endDate;
 
 public:
     DateFilter(std::string startDate,
-               std::string endDate) {}
+               std::string endDate);
     virtual bool filter(std::string date) = 0;
 };
 

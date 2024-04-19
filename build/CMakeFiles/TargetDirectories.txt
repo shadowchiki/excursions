@@ -27,3 +27,10 @@
 /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-build/googletest/CMakeFiles/install.dir
 /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-build/googletest/CMakeFiles/install/local.dir
 /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-build/googletest/CMakeFiles/install/strip.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/dateutils.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/edit_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/rebuild_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/list_install_components.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/install.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/install/local.dir
+/home/alejandro/workspace/cpp/excursions/build/utils/date/CMakeFiles/install/strip.dir

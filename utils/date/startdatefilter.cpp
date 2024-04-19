@@ -1,8 +1,8 @@
 #include "startdatefilter.h"
 
-StartDateFilter::StartDateFilter()
+StartDateFilter::StartDateFilter(std::string startDate) : DateFilter(startDate, "")
 {
-
+    this->startDate = startDate;
 }
 
 bool StartDateFilter::filter(std::string date){

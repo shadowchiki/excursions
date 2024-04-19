@@ -7,7 +7,7 @@ class DateFilterFactory
 {
 public:
     DateFilterFactory();
-    DateFilter getFilter(std::string startDate,
+    DateFilter* getFilter(std::string startDate,
                          std::string endDate);
 };
 
