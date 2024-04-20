@@ -30,19 +30,8 @@ install(TARGETS ${PROJECT_NAME}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  # Specify the commit you depend on and update it regularly.
-  URL https://github.com/google/googletest/archive/5376968f6948923e2411081fd9372e71a59d8e77.zip
-)
-# For Windows: Prevent overriding the parent project's compiler/linker settings
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
-target_link_libraries(${PROJECT_NAME} gtest_main)
-add_test(NAME example_test COMMAND example)
-
 add_subdirectory(utils/date/)
+add_subdirectory(utils/date/test)
 target_link_libraries(${PROJECT_NAME} dateutils)
 
 #[[Crea funciones a ejecutar en el fichero

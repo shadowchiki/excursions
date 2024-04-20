@@ -38,13 +38,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 42,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 45,
+				"line" : 35,
 				"parent" : 0
 			}
 		]
@@ -61,25 +55,12 @@
 					"fragment" : "-std=gnu++17"
 				}
 			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 3,
-					"isSystem" : true,
-					"path" : "/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/_deps/googletest-src/googletest/include"
-				},
-				{
-					"backtrace" : 3,
-					"isSystem" : true,
-					"path" : "/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/_deps/googletest-src/googletest"
-				}
-			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
 				"backtraces" : 
 				[
-					3
+					1
 				],
 				"standard" : "17"
 			},
@@ -103,11 +84,7 @@
 	[
 		{
 			"backtrace" : 3,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 3,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "dateutils::@5fae86e061ccdfe25b3b"
 		}
 	],
 	"id" : "excursions::@6890427a1f51a3e7e1df",
@@ -139,21 +116,7 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "lib/libgtest_main.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 4,
-				"fragment" : "-lprivate",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 4,
-				"fragment" : "-ldateutils",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "lib/libgtest.a",
+				"fragment" : "utils/date/libdateutils.a",
 				"role" : "libraries"
 			}
 		],

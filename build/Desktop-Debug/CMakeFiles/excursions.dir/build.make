@@ -252,9 +252,7 @@ excursions: CMakeFiles/excursions.dir/model/inscription.cpp.o
 excursions: CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o
 excursions: CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o
 excursions: CMakeFiles/excursions.dir/build.make
-excursions: lib/libgtest_main.a
 excursions: utils/date/libdateutils.a
-excursions: lib/libgtest.a
 excursions: CMakeFiles/excursions.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable excursions"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/excursions.dir/link.txt --verbose=$(VERBOSE)

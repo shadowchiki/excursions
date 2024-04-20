@@ -42,82 +42,71 @@ cmake_ninja_workdir = /home/alejandro/workspace/cpp/excursions/build/
 #############################################
 # Order-only phony target for excursions
 
-build cmake_object_order_depends_target_excursions: phony || cmake_object_order_depends_target_dateutils cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_excursions: phony || cmake_object_order_depends_target_dateutils
 
 build CMakeFiles/excursions.dir/main.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/main.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/main.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir
 
 build CMakeFiles/excursions.dir/model/excursion.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/excursion.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/excursion.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model
 
 build CMakeFiles/excursions.dir/model/partner/partner.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/partner/partner.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/partner/partner.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model/partner
 
 build CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/partner/standarpartner.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model/partner
 
 build CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/partner/federatedpartner.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model/partner
 
 build CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/partner/childrenpartner.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model/partner
 
 build CMakeFiles/excursions.dir/model/secure.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/secure.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/secure.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model
 
 build CMakeFiles/excursions.dir/model/federation.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/federation.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/federation.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model
 
 build CMakeFiles/excursions.dir/model/inscription.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/model/inscription.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/model/inscription.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/model
 
 build CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/controller/excursioncontroller.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/controller
 
 build CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o: CXX_COMPILER__excursions_ /home/alejandro/workspace/cpp/excursions/controller/dao/impl/excursiondaofileimpl.cpp || cmake_object_order_depends_target_excursions
   DEP_FILE = CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o.d
   FLAGS = -std=gnu++17
-  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles/excursions.dir
   OBJECT_FILE_DIR = CMakeFiles/excursions.dir/controller/dao/impl
 
@@ -129,8 +118,8 @@ build CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o: 
 #############################################
 # Link the executable excursions
 
-build excursions: CXX_EXECUTABLE_LINKER__excursions_ CMakeFiles/excursions.dir/main.cpp.o CMakeFiles/excursions.dir/model/excursion.cpp.o CMakeFiles/excursions.dir/model/partner/partner.cpp.o CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o CMakeFiles/excursions.dir/model/secure.cpp.o CMakeFiles/excursions.dir/model/federation.cpp.o CMakeFiles/excursions.dir/model/inscription.cpp.o CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o | lib/libgtest_main.a utils/date/libdateutils.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a utils/date/libdateutils.a
-  LINK_LIBRARIES = lib/libgtest_main.a  utils/date/libdateutils.a  lib/libgtest.a
+build excursions: CXX_EXECUTABLE_LINKER__excursions_ CMakeFiles/excursions.dir/main.cpp.o CMakeFiles/excursions.dir/model/excursion.cpp.o CMakeFiles/excursions.dir/model/partner/partner.cpp.o CMakeFiles/excursions.dir/model/partner/standarpartner.cpp.o CMakeFiles/excursions.dir/model/partner/federatedpartner.cpp.o CMakeFiles/excursions.dir/model/partner/childrenpartner.cpp.o CMakeFiles/excursions.dir/model/secure.cpp.o CMakeFiles/excursions.dir/model/federation.cpp.o CMakeFiles/excursions.dir/model/inscription.cpp.o CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o | utils/date/libdateutils.a || utils/date/libdateutils.a
+  LINK_LIBRARIES = utils/date/libdateutils.a
   OBJECT_DIR = CMakeFiles/excursions.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -205,6 +194,238 @@ build install/strip: phony CMakeFiles/install/strip.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/alejandro/workspace/cpp/excursions/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target dateutils
+
+
+#############################################
+# Order-only phony target for dateutils
+
+build cmake_object_order_depends_target_dateutils: phony || utils/date/CMakeFiles/dateutils.dir
+
+build utils/date/CMakeFiles/dateutils.dir/dateutils.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/dateutils.cpp || cmake_object_order_depends_target_dateutils
+  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/dateutils.cpp.o.d
+  FLAGS = -std=gnu++17
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
+
+build utils/date/CMakeFiles/dateutils.dir/datefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/datefilter.cpp || cmake_object_order_depends_target_dateutils
+  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/datefilter.cpp.o.d
+  FLAGS = -std=gnu++17
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
+
+build utils/date/CMakeFiles/dateutils.dir/startdatefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/startdatefilter.cpp || cmake_object_order_depends_target_dateutils
+  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/startdatefilter.cpp.o.d
+  FLAGS = -std=gnu++17
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
+
+build utils/date/CMakeFiles/dateutils.dir/datefilterfactory.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/datefilterfactory.cpp || cmake_object_order_depends_target_dateutils
+  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/datefilterfactory.cpp.o.d
+  FLAGS = -std=gnu++17
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
+
+build utils/date/CMakeFiles/dateutils.dir/betweendatefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/betweendatefilter.cpp || cmake_object_order_depends_target_dateutils
+  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/betweendatefilter.cpp.o.d
+  FLAGS = -std=gnu++17
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
+
+build utils/date/CMakeFiles/dateutils.dir/enddatefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/enddatefilter.cpp || cmake_object_order_depends_target_dateutils
+  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/enddatefilter.cpp.o.d
+  FLAGS = -std=gnu++17
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target dateutils
+
+
+#############################################
+# Link the static library utils/date/libdateutils.a
+
+build utils/date/libdateutils.a: CXX_STATIC_LIBRARY_LINKER__dateutils_ utils/date/CMakeFiles/dateutils.dir/dateutils.cpp.o utils/date/CMakeFiles/dateutils.dir/datefilter.cpp.o utils/date/CMakeFiles/dateutils.dir/startdatefilter.cpp.o utils/date/CMakeFiles/dateutils.dir/datefilterfactory.cpp.o utils/date/CMakeFiles/dateutils.dir/betweendatefilter.cpp.o utils/date/CMakeFiles/dateutils.dir/enddatefilter.cpp.o
+  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = utils/date/libdateutils.a
+  TARGET_PDB = dateutils.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build utils/date/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build utils/date/edit_cache: phony utils/date/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build utils/date/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake --regenerate-during-build -S/home/alejandro/workspace/cpp/excursions -B/home/alejandro/workspace/cpp/excursions/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build utils/date/rebuild_cache: phony utils/date/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build utils/date/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build utils/date/CMakeFiles/install.util: CUSTOM_COMMAND utils/date/all
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build utils/date/install: phony utils/date/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build utils/date/CMakeFiles/install/local.util: CUSTOM_COMMAND utils/date/all
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build utils/date/install/local: phony utils/date/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build utils/date/CMakeFiles/install/strip.util: CUSTOM_COMMAND utils/date/all
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build utils/date/install/strip: phony utils/date/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/alejandro/workspace/cpp/excursions/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target dateutilstest
+
+
+#############################################
+# Order-only phony target for dateutilstest
+
+build cmake_object_order_depends_target_dateutilstest: phony || cmake_object_order_depends_target_dateutils cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build utils/date/test/CMakeFiles/dateutilstest.dir/datefactory_test.cpp.o: CXX_COMPILER__dateutilstest_ /home/alejandro/workspace/cpp/excursions/utils/date/test/datefactory_test.cpp || cmake_object_order_depends_target_dateutilstest
+  DEP_FILE = utils/date/test/CMakeFiles/dateutilstest.dir/datefactory_test.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest/include -isystem /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-src/googletest
+  OBJECT_DIR = utils/date/test/CMakeFiles/dateutilstest.dir
+  OBJECT_FILE_DIR = utils/date/test/CMakeFiles/dateutilstest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dateutilstest
+
+
+#############################################
+# Link the executable utils/date/test/dateutilstest
+
+build utils/date/test/dateutilstest: CXX_EXECUTABLE_LINKER__dateutilstest_ utils/date/test/CMakeFiles/dateutilstest.dir/datefactory_test.cpp.o | utils/date/libdateutils.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a utils/date/libdateutils.a
+  LINK_LIBRARIES = utils/date/libdateutils.a  lib/libgtest_main.a  lib/libgtest.a
+  OBJECT_DIR = utils/date/test/CMakeFiles/dateutilstest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = utils/date/test/dateutilstest
+  TARGET_PDB = dateutilstest.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build utils/date/test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date/test && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build utils/date/test/edit_cache: phony utils/date/test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build utils/date/test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date/test && /usr/bin/cmake --regenerate-during-build -S/home/alejandro/workspace/cpp/excursions -B/home/alejandro/workspace/cpp/excursions/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build utils/date/test/rebuild_cache: phony utils/date/test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build utils/date/test/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build utils/date/test/CMakeFiles/install.util: CUSTOM_COMMAND utils/date/test/all
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date/test && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build utils/date/test/install: phony utils/date/test/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build utils/date/test/CMakeFiles/install/local.util: CUSTOM_COMMAND utils/date/test/all
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date/test && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build utils/date/test/install/local: phony utils/date/test/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build utils/date/test/CMakeFiles/install/strip.util: CUSTOM_COMMAND utils/date/test/all
+  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date/test && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build utils/date/test/install/strip: phony utils/date/test/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/alejandro/workspace/cpp/excursions/utils/date/test/CMakeLists.txt
 # =============================================================================
 
 
@@ -537,139 +758,11 @@ build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_CO
 build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
 
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/alejandro/workspace/cpp/excursions/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target dateutils
-
-
-#############################################
-# Order-only phony target for dateutils
-
-build cmake_object_order_depends_target_dateutils: phony || utils/date/CMakeFiles/dateutils.dir
-
-build utils/date/CMakeFiles/dateutils.dir/dateutils.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/dateutils.cpp || cmake_object_order_depends_target_dateutils
-  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/dateutils.cpp.o.d
-  FLAGS = -std=gnu++17
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
-
-build utils/date/CMakeFiles/dateutils.dir/datefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/datefilter.cpp || cmake_object_order_depends_target_dateutils
-  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/datefilter.cpp.o.d
-  FLAGS = -std=gnu++17
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
-
-build utils/date/CMakeFiles/dateutils.dir/startdatefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/startdatefilter.cpp || cmake_object_order_depends_target_dateutils
-  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/startdatefilter.cpp.o.d
-  FLAGS = -std=gnu++17
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
-
-build utils/date/CMakeFiles/dateutils.dir/datefilterfactory.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/datefilterfactory.cpp || cmake_object_order_depends_target_dateutils
-  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/datefilterfactory.cpp.o.d
-  FLAGS = -std=gnu++17
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
-
-build utils/date/CMakeFiles/dateutils.dir/betweendatefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/betweendatefilter.cpp || cmake_object_order_depends_target_dateutils
-  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/betweendatefilter.cpp.o.d
-  FLAGS = -std=gnu++17
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
-
-build utils/date/CMakeFiles/dateutils.dir/enddatefilter.cpp.o: CXX_COMPILER__dateutils_ /home/alejandro/workspace/cpp/excursions/utils/date/enddatefilter.cpp || cmake_object_order_depends_target_dateutils
-  DEP_FILE = utils/date/CMakeFiles/dateutils.dir/enddatefilter.cpp.o.d
-  FLAGS = -std=gnu++17
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  OBJECT_FILE_DIR = utils/date/CMakeFiles/dateutils.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target dateutils
-
-
-#############################################
-# Link the static library utils/date/libdateutils.a
-
-build utils/date/libdateutils.a: CXX_STATIC_LIBRARY_LINKER__dateutils_ utils/date/CMakeFiles/dateutils.dir/dateutils.cpp.o utils/date/CMakeFiles/dateutils.dir/datefilter.cpp.o utils/date/CMakeFiles/dateutils.dir/startdatefilter.cpp.o utils/date/CMakeFiles/dateutils.dir/datefilterfactory.cpp.o utils/date/CMakeFiles/dateutils.dir/betweendatefilter.cpp.o utils/date/CMakeFiles/dateutils.dir/enddatefilter.cpp.o
-  OBJECT_DIR = utils/date/CMakeFiles/dateutils.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = utils/date/libdateutils.a
-  TARGET_PDB = dateutils.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build utils/date/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build utils/date/edit_cache: phony utils/date/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build utils/date/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake --regenerate-during-build -S/home/alejandro/workspace/cpp/excursions -B/home/alejandro/workspace/cpp/excursions/build
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build utils/date/rebuild_cache: phony utils/date/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build utils/date/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build utils/date/CMakeFiles/install.util: CUSTOM_COMMAND utils/date/all
-  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build utils/date/install: phony utils/date/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build utils/date/CMakeFiles/install/local.util: CUSTOM_COMMAND utils/date/all
-  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build utils/date/install/local: phony utils/date/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build utils/date/CMakeFiles/install/strip.util: CUSTOM_COMMAND utils/date/all
-  COMMAND = cd /home/alejandro/workspace/cpp/excursions/build/utils/date && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build utils/date/install/strip: phony utils/date/CMakeFiles/install/strip.util
-
-# =============================================================================
 # Target aliases.
 
 build dateutils: phony utils/date/libdateutils.a
+
+build dateutilstest: phony utils/date/test/dateutilstest
 
 build gmock: phony lib/libgmock.a
 
@@ -697,7 +790,7 @@ build libgtest_main.a: phony lib/libgtest_main.a
 #############################################
 # Folder: /home/alejandro/workspace/cpp/excursions/build
 
-build all: phony excursions _deps/googletest-build/all utils/date/all
+build all: phony excursions utils/date/all utils/date/test/all
 
 # =============================================================================
 
@@ -728,20 +821,27 @@ build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_m
 build utils/date/all: phony utils/date/libdateutils.a
 
 # =============================================================================
+
+#############################################
+# Folder: /home/alejandro/workspace/cpp/excursions/build/utils/date/test
+
+build utils/date/test/all: phony utils/date/test/dateutilstest _deps/googletest-build/all
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../utils/date/CMakeLists.txt /usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FetchContent.cmake /usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPython.cmake /usr/share/cmake-3.22/Modules/FindPython/Support.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../utils/date/CMakeLists.txt ../utils/date/test/CMakeLists.txt /usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FetchContent.cmake /usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPython.cmake /usr/share/cmake-3.22/Modules/FindPython/Support.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../utils/date/CMakeLists.txt /usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FetchContent.cmake /usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPython.cmake /usr/share/cmake-3.22/Modules/FindPython/Support.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+build ../CMakeLists.txt ../utils/date/CMakeLists.txt ../utils/date/test/CMakeLists.txt /usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FetchContent.cmake /usr/share/cmake-3.22/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPython.cmake /usr/share/cmake-3.22/Modules/FindPython/Support.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################

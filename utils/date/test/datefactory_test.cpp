@@ -6,8 +6,7 @@ TEST(DateFilterFactoryTests, FactoryTesting)
 
     DateFilterFactory factory;
     DateFilter* filter = factory.getFilter("", "");
-    filter->filter("");
-
+    ASSERT_EQ(filter, nullptr);
 
 }
 

@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "_deps/googletest-build",
-		"source" : "build/Desktop-Debug/_deps/googletest-src"
+		"build" : "utils/date/test",
+		"source" : "utils/date/test"
 	}
 }
