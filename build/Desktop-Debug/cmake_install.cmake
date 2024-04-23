@@ -62,6 +62,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/utils/date/cmake_install.cmake")
   include("/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/utils/date/test/cmake_install.cmake")
+  include("/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/controller/dao/cmake_install.cmake")
+  include("/home/alejandro/workspace/cpp/excursions/build/Desktop-Debug/controller/dao/test/cmake_install.cmake")
 
 endif()
 

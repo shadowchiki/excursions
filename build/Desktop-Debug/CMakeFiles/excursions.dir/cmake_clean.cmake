@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o"
-  "CMakeFiles/excursions.dir/controller/dao/impl/excursiondaofileimpl.cpp.o.d"
   "CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o"
   "CMakeFiles/excursions.dir/controller/excursioncontroller.cpp.o.d"
   "CMakeFiles/excursions.dir/main.cpp.o"

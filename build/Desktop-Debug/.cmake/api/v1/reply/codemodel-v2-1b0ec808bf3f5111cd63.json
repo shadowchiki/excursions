@@ -9,10 +9,12 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						6,
+						7
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-8f2fc2fdfc594c7ab62f.json",
+					"jsonFile" : "directory-.-Debug-bf1974f61f002eb90800.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -21,7 +23,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						2
+						4
 					]
 				},
 				{
@@ -36,7 +38,7 @@
 					"source" : "utils/date",
 					"targetIndexes" : 
 					[
-						0
+						2
 					]
 				},
 				{
@@ -56,7 +58,7 @@
 					"source" : "utils/date/test",
 					"targetIndexes" : 
 					[
-						1
+						3
 					]
 				},
 				{
@@ -82,7 +84,7 @@
 						5
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-d6bc16294730c5013d4c.json",
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-37092a99d874c9ba2ae7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -92,14 +94,14 @@
 					"source" : "build/Desktop-Debug/_deps/googletest-src/googlemock",
 					"targetIndexes" : 
 					[
-						3,
-						4
+						5,
+						6
 					]
 				},
 				{
 					"build" : "_deps/googletest-build/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-e234a071cd85a7de1c12.json",
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-61a084a3b080a5f0a128.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -109,8 +111,38 @@
 					"source" : "build/Desktop-Debug/_deps/googletest-src/googletest",
 					"targetIndexes" : 
 					[
-						5,
-						6
+						7,
+						8
+					]
+				},
+				{
+					"build" : "controller/dao",
+					"jsonFile" : "directory-controller.dao-Debug-6de95d29557514f47323.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "controller/dao",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "controller/dao/test",
+					"jsonFile" : "directory-controller.dao.test-Debug-06009d02e3d209ab95f7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "controller/dao/test",
+					"targetIndexes" : 
+					[
+						1
 					]
 				}
 			],
@@ -126,14 +158,18 @@
 					[
 						0,
 						1,
-						2
+						2,
+						6,
+						7
 					],
 					"name" : "excursions",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					]
 				},
 				{
@@ -161,8 +197,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						3,
-						4
+						5,
+						6
 					]
 				},
 				{
@@ -174,13 +210,27 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						5,
-						6
+						7,
+						8
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 6,
+					"id" : "dao::@7877bd598324564c1187",
+					"jsonFile" : "target-dao-Debug-ed59d31b532a9569a798.json",
+					"name" : "dao",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "daotest::@9f518ff2300414c55cdd",
+					"jsonFile" : "target-daotest-Debug-4617b9dbb69eda89ccbb.json",
+					"name" : "daotest",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 1,
 					"id" : "dateutils::@5fae86e061ccdfe25b3b",
@@ -191,14 +241,14 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "dateutilstest::@96a5869ece989404bce7",
-					"jsonFile" : "target-dateutilstest-Debug-c3003ab6d320711e0350.json",
+					"jsonFile" : "target-dateutilstest-Debug-867d424ab573ba58274b.json",
 					"name" : "dateutilstest",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "excursions::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-excursions-Debug-5a5f406fcc2e053fc962.json",
+					"jsonFile" : "target-excursions-Debug-55a2f8e9a1bab742e2f5.json",
 					"name" : "excursions",
 					"projectIndex" : 0
 				},

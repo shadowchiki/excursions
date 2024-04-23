@@ -19,9 +19,7 @@ add_executable(${PROJECT_NAME} main.cpp
     model/federation.h model/federation.cpp
     model/inscription.h model/inscription.cpp
     controller/excursioncontroller.h controller/excursioncontroller.cpp
-    controller/dao/excursiondao.h
-    controller/dao/impl/excursiondaofileimpl.cpp
-    controller/dao/impl/excursiondaofileimpl.h
+    filedb/excursions.txt
 )
 
 include(GNUInstallDirs)
@@ -32,7 +30,9 @@ install(TARGETS ${PROJECT_NAME}
 
 add_subdirectory(utils/date/)
 add_subdirectory(utils/date/test)
-target_link_libraries(${PROJECT_NAME} dateutils)
+add_subdirectory(controller/dao/)
+add_subdirectory(controller/dao/test)
+target_link_libraries(${PROJECT_NAME} dateutils dao)
 
 #[[Crea funciones a ejecutar en el fichero
 EL primer valor es el nombre del metodo y el siguiente es un parametro

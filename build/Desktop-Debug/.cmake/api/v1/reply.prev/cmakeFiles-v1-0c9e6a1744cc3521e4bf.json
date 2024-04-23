@@ -896,6 +896,17 @@
 		{
 			"isGenerated" : true,
 			"path" : "build/Desktop-Debug/_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
+		},
+		{
+			"path" : "controller/dao/CMakeLists.txt"
+		},
+		{
+			"path" : "controller/dao/test/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/FetchContent.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

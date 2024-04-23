@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 # Agrega un ejecutable para las pruebas unitarias
-add_executable(dateutilstest datefactory_test.cpp)
+add_executable(dateutilstest dateutilstest.cpp)
 
 # Vincula la biblioteca dateutils al ejecutable de prueba
 target_link_libraries(dateutilstest PRIVATE dateutils gtest_main)

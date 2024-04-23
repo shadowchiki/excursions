@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "8"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1955,7 +1955,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Use shared (DLL) run-time lib even when Google Test is built as static lib."
+					"value" : ""
 				}
 			],
 			"type" : "BOOL",

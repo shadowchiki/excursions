@@ -41,3 +41,17 @@
 /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-build/googletest/CMakeFiles/install.dir
 /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-build/googletest/CMakeFiles/install/local.dir
 /home/alejandro/workspace/cpp/excursions/build/_deps/googletest-build/googletest/CMakeFiles/install/strip.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/dao.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/edit_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/rebuild_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/list_install_components.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/install.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/install/local.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/CMakeFiles/install/strip.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/daotest.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/edit_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/rebuild_cache.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/list_install_components.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/install.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/install/local.dir
+/home/alejandro/workspace/cpp/excursions/build/controller/dao/test/CMakeFiles/install/strip.dir

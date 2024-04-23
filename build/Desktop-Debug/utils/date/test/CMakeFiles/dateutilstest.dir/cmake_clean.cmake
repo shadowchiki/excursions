@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dateutilstest.dir/datefactory_test.cpp.o"
-  "CMakeFiles/dateutilstest.dir/datefactory_test.cpp.o.d"
+  "CMakeFiles/dateutilstest.dir/dateutilstest.cpp.o"
+  "CMakeFiles/dateutilstest.dir/dateutilstest.cpp.o.d"
   "dateutilstest"
   "dateutilstest.pdb"
 )

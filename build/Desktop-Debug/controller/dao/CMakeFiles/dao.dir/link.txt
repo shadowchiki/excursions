@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdao.a CMakeFiles/dao.dir/impl/excursiondaofileimpl.cpp.o
+/usr/bin/ranlib libdao.a

@@ -7,6 +7,7 @@ class DateUtils
 {
 public:
     DateUtils();
+    const std::string dateFormat = "%Y-%m-%d";
     std::time_t convert(std::string date);
     bool equals(std::string date, std::string dateCompare);
     bool equals(std::time_t date, std::time_t dateCompare);

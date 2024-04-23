@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "utils/date/test/dateutilstest"
+			"path" : "controller/dao/test/daotest"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,7 @@
 		],
 		"files" : 
 		[
-			"utils/date/test/CMakeLists.txt"
+			"controller/dao/test/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -89,9 +89,13 @@
 		{
 			"backtrace" : 2,
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dao::@7877bd598324564c1187"
 		}
 	],
-	"id" : "dateutilstest::@96a5869ece989404bce7",
+	"id" : "daotest::@9f518ff2300414c55cdd",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -106,12 +110,16 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../libdateutils.a",
+				"fragment" : "../libdao.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
 				"fragment" : "../../../lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../../utils/date/libdateutils.a",
 				"role" : "libraries"
 			},
 			{
@@ -121,12 +129,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "dateutilstest",
-	"nameOnDisk" : "dateutilstest",
+	"name" : "daotest",
+	"nameOnDisk" : "daotest",
 	"paths" : 
 	{
-		"build" : "utils/date/test",
-		"source" : "utils/date/test"
+		"build" : "controller/dao/test",
+		"source" : "controller/dao/test"
 	},
 	"sourceGroups" : 
 	[
@@ -143,7 +151,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "utils/date/test/datefactory_test.cpp",
+			"path" : "controller/dao/test/daotests.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

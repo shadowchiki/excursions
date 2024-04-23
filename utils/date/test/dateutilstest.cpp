@@ -10,6 +10,13 @@ TEST(DateFilterFactoryTests, FactoryTesting)
 
 }
 
+TEST(DateFilterFactoryTEst, FactoryStartDateFilterOk)
+{
+    DateFilterFactory factory;
+    DateFilter* filter = factory.getFilter("2024-23-01", "");
+    ASSERT_TRUE(filter != nullptr);
+}
+
 int main(int argc, char *argv[])
 {
     testing::InitGoogleTest(&argc, argv);

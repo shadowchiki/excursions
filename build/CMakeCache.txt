@@ -296,6 +296,9 @@ FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
 
+//Dependencies for the target
+dao_LIB_DEPENDS:STATIC=general;dateutils;
+
 //Value Computed by CMake
 excursions_BINARY_DIR:STATIC=/home/alejandro/workspace/cpp/excursions/build
 
@@ -350,8 +353,6 @@ gtest_build_tests:BOOL=OFF
 //Disable uses of pthreads in gtest.
 gtest_disable_pthreads:BOOL=OFF
 
-//Use shared (DLL) run-time lib even when Google Test is built
-// as static lib.
 gtest_force_shared_crt:BOOL=ON
 
 //Build gtest with internal symbols hidden in shared libraries.
@@ -499,7 +500,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
