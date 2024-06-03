@@ -5,7 +5,9 @@
 TEST(ExcursionDaoFileTest, test1)
 {
     ExcursionDao* dao = new ExcursionDaoFileImpl();
-    std::vector<Excursion*> excursions = dao->getByDates("","");
+    std::vector<Excursion*> excursions = dao->getByDates("2023-10-15","");
+
+    std::cout << "Texto";
 
     for(Excursion* excursion : excursions){
         std::cout << excursion;

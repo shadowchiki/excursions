@@ -38,7 +38,8 @@ Excursion* ExcursionDaoFileImpl::map(string line){
 }
 
 vector<Excursion*> ExcursionDaoFileImpl::getByDates(string startDate, string endDate){
-    ifstream file(this->FILE_ROUTE);
+    ifstream file("/home/alejandro/workspace/cpp/excursions/filedb/excursions.txt");
+
     string line;
     vector<Excursion*> excursions;
     if(!file.is_open()){

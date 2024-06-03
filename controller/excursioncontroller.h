@@ -1,7 +1,6 @@
 #ifndef EXCURSIONCONTROLLER_H
 #define EXCURSIONCONTROLLER_H
 #include <vector>
-#include "../model/excursion.h"
 #include "dao/excursiondao.h"
 
 class ExcursionController

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdateutils.a CMakeFiles/dateutils.dir/dateutils.cpp.o CMakeFiles/dateutils.dir/datefilter.cpp.o CMakeFiles/dateutils.dir/startdatefilter.cpp.o CMakeFiles/dateutils.dir/datefilterfactory.cpp.o CMakeFiles/dateutils.dir/betweendatefilter.cpp.o CMakeFiles/dateutils.dir/enddatefilter.cpp.o
-/usr/bin/ranlib libdateutils.a

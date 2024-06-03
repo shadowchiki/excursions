@@ -10,7 +10,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
     Añade al ejecutable las clases necesarias para compilar
 ]]
 add_executable(${PROJECT_NAME} main.cpp
-    model/excursion.h model/excursion.cpp
     model/partner/partner.h model/partner/partner.cpp
     model/partner/standarpartner.h model/partner/standarpartner.cpp
     model/partner/federatedpartner.h model/partner/federatedpartner.cpp

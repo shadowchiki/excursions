@@ -1,1 +1,0 @@
-/usr/bin/g++-11 -g CMakeFiles/daotest.dir/daotests.cpp.o -o daotest  ../libdao.a ../../../lib/libgtest_main.a ../../../utils/date/libdateutils.a ../../../lib/libgtest.a 

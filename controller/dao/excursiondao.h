@@ -1,6 +1,6 @@
 #ifndef EXCURSIONDAO_H
 #define EXCURSIONDAO_H
-#include "../../model/excursion.h"
+#include "excursion.h"
 #include <string>
 #include <vector>
 

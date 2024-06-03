@@ -1,7 +1,7 @@
 #ifndef INSCRIPTION_H
 #define INSCRIPTION_H
 #include "partner/partner.h"
-#include "excursion.h"
+#include "../controller/dao/excursion.h"
 
 class Inscription
 {
