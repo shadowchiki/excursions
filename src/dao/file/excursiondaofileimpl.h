@@ -1,20 +1,26 @@
-#ifndef EXCURSIONDAOFILEIMPL_H
-#define EXCURSIONDAOFILEIMPL_H
+#pragma once
 
 #include <dao/excursiondao.h>
+#include <memory>
+#include "dao/file/FileDao.h"
 
-class ExcursionDaoFileImpl : public ExcursionDao
+class ExcursionDaoFileImpl
+    : public ExcursionDao
+    , public FileDao
 {
-private:
-    const std::string FILE_ROUTE = "../../../filedb/excursions.txt";
-    Excursion* map(std::string line);
-    std::vector<Excursion*> filterByDate(std::string startDate, std::string endDate);
-
 public:
     ExcursionDaoFileImpl();
-    virtual Excursion* getById(std::string id);
-    virtual std::vector<Excursion*> getByDates(std::string startDate, std::string endDate);
-    virtual void add(Excursion* excursion);
-};
 
-#endif  // EXCURSIONDAOFILEIMPL_H
+    virtual std::vector<std::shared_ptr<Excursion>> getByDates(
+        std::string startDate,
+        std::string endDate) override;
+    virtual void add(std::shared_ptr<Excursion> excursion) override;
+
+protected:
+    virtual void map() override;
+    virtual std::string filePath() override;
+
+private:
+    const std::string kFilePath = "/home/alejandro/workspace/excursions/src/filedb/excursions.txt";
+    std::vector<std::shared_ptr<Excursion>> mExcursions;
+};

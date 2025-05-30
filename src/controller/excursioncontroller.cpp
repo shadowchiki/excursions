@@ -13,15 +13,15 @@ ExcursionController::~ExcursionController()
 
 void ExcursionController::add(Excursion* excursion)
 {
-    Excursion* finded = this->dao->getById(excursion->getId());
-
-    if (finded != nullptr)
-    {
-        this->dao->add(excursion);
-    }
+    // Excursion* finded = this->dao->getById(excursion->getId());
+    //
+    // if (finded != nullptr)
+    // {
+    //     this->dao->add(excursion);
+    // }
 }
 
 std::vector<Excursion*> ExcursionController::getByDates(std::string startDate, std::string endDate)
 {
-    return this->dao->getByDates(startDate, endDate);
+    // return this->dao->getByDates(startDate, endDate);
 }

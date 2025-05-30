@@ -16,6 +16,7 @@ void FileDao::readFile()
 
     if (file.is_open())
     {
+        clear();
         while (file)
         {
             getline(file, mLine);
@@ -37,4 +38,30 @@ void FileDao::readFile()
     {
         std::cout << "File not found" << std::endl;
     }
+}
+void FileDao::saveOnFile()
+{
+    std::ofstream file(filePath(), std::ios::app);
+    if (file.is_open())
+    {
+        clear();
+        for (int i = 0; i < mData.size(); i++)
+        {
+            if (i != mData.size() - 1)
+            {
+                mStream << mData.at(i) << ";";
+            }
+            else
+            {
+                mStream << mData.at(i) << "\n";
+            }
+        }
+        file << mStream.str();
+    }
+}
+void FileDao::clear()
+{
+    mStream.clear();
+    mData.clear();
+    mValue = "";
 }

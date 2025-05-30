@@ -1,14 +1,11 @@
 #include <dao/file/excursiondaofileimpl.h>
 #include <gtest/gtest.h>
+#include <memory>
 
 TEST(ExcursionDaoFileTest, test1)
 {
-    ExcursionDao* dao = new ExcursionDaoFileImpl();
-    std::vector<Excursion*> excursions = dao->getByDates("2023-10-15", "");
-
-    for (Excursion* excursion : excursions)
-    {
-    }
+    std::unique_ptr<ExcursionDao> excursionDao = std::make_unique<ExcursionDaoFileImpl>();
+    std::vector<std::shared_ptr<Excursion>> excursions = excursionDao->getByDates("2023-10-15", "");
 }
 
 int main(int argc, char* argv[])
