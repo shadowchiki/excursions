@@ -1,2 +1,2 @@
-001;Excursion de prueba;2024-10-15;10;1
-001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1001;Excursion de prueba;2024-10-15;10;1
+001;Excursion de prueba;2025-01-15;10;1
+002;Excursion de prueba 2;2025-06-15;10;1

@@ -1,27 +1,26 @@
 #include "excursioncontroller.h"
+#include <memory>
 #include "dao/file/excursiondaofileimpl.h"
 
+namespace controller::excursion
+{
 ExcursionController::ExcursionController()
+: mDao(std::make_shared<ExcursionDaoFileImpl>())
 {
-    this->dao = new ExcursionDaoFileImpl();
 }
 
-ExcursionController::~ExcursionController()
+void ExcursionController::add(std::shared_ptr<Excursion> excursion)
 {
-    delete dao;
-}
-
-void ExcursionController::add(Excursion* excursion)
-{
-    // Excursion* finded = this->dao->getById(excursion->getId());
+    // Excursion* finded = this->mDao->getById(excursion->getId());
     //
     // if (finded != nullptr)
     // {
-    //     this->dao->add(excursion);
+    //     this->mDao->add(excursion);
     // }
 }
 
-std::vector<Excursion*> ExcursionController::getByDates(std::string startDate, std::string endDate)
+ std::vector<std::shared_ptr<Excursion>> ExcursionController::getByDates(std::string startDate, std::string endDate)
 {
-    // return this->dao->getByDates(startDate, endDate);
+    return mDao->getByDates(startDate, endDate);
 }
+}  // namespace controller::excursion

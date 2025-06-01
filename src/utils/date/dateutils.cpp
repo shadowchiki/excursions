@@ -1,13 +1,15 @@
 #include "dateutils.h"
+#include <iomanip>
+#include <sstream>
+
 using namespace std;
 
-DateUtils::DateUtils()
-{}
+const std::string DateUtils::kDateFormat = "YYYY-MM-DD";
 
 time_t DateUtils::convert(string date){
     istringstream stream(date);
     tm tm{};
-    stream >> get_time(&tm, "%Y-%m-%d");
+    stream >> get_time(&tm, kInternalDateFormat.c_str());
     time_t start = mktime(&tm);
     return start;
 }

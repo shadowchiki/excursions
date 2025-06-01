@@ -3,11 +3,6 @@
 #include "enddatefilter.h"
 #include "betweendatefilter.h"
 
-DateFilterFactory::DateFilterFactory()
-{
-
-}
-
 DateFilter* DateFilterFactory::getFilter(std::string startDate, std::string endDate){
 
     if(!startDate.empty() && !endDate.empty()){

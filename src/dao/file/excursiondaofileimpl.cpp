@@ -1,11 +1,15 @@
 #include "excursiondaofileimpl.h"
 #include <memory>
 #include <string>
+#include <vector>
+#include "model/excursion.h"
+#include "utils/date/datefilterfactory.h"
 
 ExcursionDaoFileImpl::ExcursionDaoFileImpl()
     : ExcursionDao()
     , FileDao()
     , mExcursions()
+    , mDateFilterFactory(std::make_unique<DateFilterFactory>())
 {
     readFile();
 }
@@ -14,7 +18,17 @@ std::vector<std::shared_ptr<Excursion>> ExcursionDaoFileImpl::getByDates(
     std::string startDate,
     std::string endDate)
 {
-    return mExcursions;
+    auto* dateFilterFactory = mDateFilterFactory->getFilter(startDate, endDate);
+    std::vector<std::shared_ptr<Excursion>> excursionFiltered;
+    for (auto excursion : mExcursions)
+    {
+        if (dateFilterFactory->filter(excursion->getDate()))
+        {
+            excursionFiltered.push_back(excursion);
+        }
+    }
+
+    return excursionFiltered;
 }
 
 void ExcursionDaoFileImpl::add(std::shared_ptr<Excursion> excursion)

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 add_library(
-  model
+  model SHARED
   ./excursion.cpp
   ./excursion.h
   ./federation.cpp

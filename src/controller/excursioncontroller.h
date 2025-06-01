@@ -1,19 +1,21 @@
-#ifndef EXCURSIONCONTROLLER_H
-#define EXCURSIONCONTROLLER_H
+#pragma once
+
 #include <dao/excursiondao.h>
+#include <memory>
 #include <vector>
+
+namespace controller::excursion{
 
 class ExcursionController
 {
 public:
     ExcursionController();
-    ~ExcursionController();
+    virtual ~ExcursionController() = default;
 
-    void add(Excursion* excursion);
-    std::vector<Excursion*> getByDates(std::string startDate, std::string endDate);
+    void add(std::shared_ptr<Excursion> excursion);
+    std::vector<std::shared_ptr<Excursion>> getByDates(std::string startDate, std::string endDate);
 
 private:
-    ExcursionDao* dao;
+    std::shared_ptr<ExcursionDao> mDao;
 };
-
-#endif  // EXCURSIONCONTROLLER_H
+}
