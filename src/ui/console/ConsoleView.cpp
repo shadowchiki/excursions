@@ -10,8 +10,7 @@ ConsoleView::ConsoleView()
     : View()
     , mMenu(std::make_unique<command::MenuCommand>("Main"))
 {
-    auto excursionMenu = std::make_shared<ExcursionMenu>("Excursion management");
-    this->mMenu->addAction(excursionMenu);
+    this->mMenu->addAction(std::make_shared<ExcursionMenu>("Excursion management"));
 }
 
 Execution ConsoleView::init(int argc, char* argv[])

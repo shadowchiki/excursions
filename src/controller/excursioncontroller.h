@@ -4,7 +4,8 @@
 #include <memory>
 #include <vector>
 
-namespace controller::excursion{
+namespace controller::excursion
+{
 
 class ExcursionController
 {
@@ -18,4 +19,4 @@ public:
 private:
     std::shared_ptr<ExcursionDao> mDao;
 };
-}
+}  // namespace controller::excursion

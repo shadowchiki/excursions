@@ -1,6 +1,7 @@
 #include "ExcursionMenu.hpp"
 #include <memory>
 #include "controller/excursioncontroller.h"
+#include "ui/console/command/AddExcursionCommand.hpp"
 #include "ui/console/command/ExitMenuCommand.hpp"
 #include "ui/console/command/GetExcursionByDateCommand.hpp"
 #include "ui/console/command/MenuCommand.hpp"
@@ -15,6 +16,7 @@ ExcursionMenu::ExcursionMenu(std::string tittle)
     command::MenuCommand::addAction(std::make_shared<command::ExitMenuCommand>());
     command::MenuCommand::addAction(
         std::make_shared<command::GetExcursionByDateCommand>(mController));
+    command::MenuCommand::addAction(std::make_shared<command::AddExcursionCommand>(mController));
 }
 
 Execution ExcursionMenu::execute()

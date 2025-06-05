@@ -10,6 +10,8 @@ add_library(
   ./ExcursionMenu.hpp
   ./command/GetExcursionByDateCommand.cpp
   ./command/GetExcursionByDateCommand.hpp
+  ./command/AddExcursionCommand.cpp
+  ./command/AddExcursionCommand.hpp
   ./command/MenuCommand.cpp
   ./command/MenuCommand.hpp
   ./command/ExitMenuCommand.cpp

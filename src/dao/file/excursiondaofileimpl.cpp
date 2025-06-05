@@ -33,13 +33,15 @@ std::vector<std::shared_ptr<Excursion>> ExcursionDaoFileImpl::getByDates(
 
 void ExcursionDaoFileImpl::add(std::shared_ptr<Excursion> excursion)
 {
-    mExcursions.push_back(excursion);
+    clear();
     mData.push_back(excursion->getId());
     mData.push_back(excursion->getDescription());
     mData.push_back(excursion->getDate());
     mData.push_back(std::to_string(excursion->getPrice()));
     mData.push_back(std::to_string(excursion->getDurationDays()));
     this->saveOnFile();
+    mExcursions.clear();
+    readFile();
 }
 
 void ExcursionDaoFileImpl::map()

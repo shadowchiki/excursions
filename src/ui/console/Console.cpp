@@ -14,7 +14,7 @@ std::string Console::read(std::string prompt)
 {
     this->write(prompt);
     std::string value;
-    std::cin >> value;
+    std::getline(std::cin, value);
     return value;
 }
 

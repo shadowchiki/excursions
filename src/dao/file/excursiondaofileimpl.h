@@ -3,7 +3,6 @@
 #include <dao/excursiondao.h>
 #include <memory>
 #include "dao/file/FileDao.h"
-#include "utils/date/datefilter.h"
 #include "utils/date/datefilterfactory.h"
 
 class ExcursionDaoFileImpl
@@ -25,5 +24,5 @@ protected:
 private:
     const std::string kFilePath = "/home/alejandro/workspace/excursions/src/filedb/excursions.txt";
     std::vector<std::shared_ptr<Excursion>> mExcursions;
-  std::unique_ptr<DateFilterFactory> mDateFilterFactory;
+    std::unique_ptr<DateFilterFactory> mDateFilterFactory;
 };

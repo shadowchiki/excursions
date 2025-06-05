@@ -44,7 +44,6 @@ void FileDao::saveOnFile()
     std::ofstream file(filePath(), std::ios::app);
     if (file.is_open())
     {
-        clear();
         for (int i = 0; i < mData.size(); i++)
         {
             if (i != mData.size() - 1)
@@ -61,6 +60,7 @@ void FileDao::saveOnFile()
 }
 void FileDao::clear()
 {
+    mStream.str("");
     mStream.clear();
     mData.clear();
     mValue = "";
