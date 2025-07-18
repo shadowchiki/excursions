@@ -1,6 +1,6 @@
 #pragma once
 
-#include "controller/excursioncontroller.h"
+#include "controller/ExcursionController.h"
 #include "ui/Execution.hpp"
 #include "ui/console/command/MenuCommand.hpp"
 

@@ -1,6 +1,6 @@
 #include "AddExcursionCommand.hpp"
+#include <utils/date/dateutils.h>
 #include <memory>
-#include "model/excursion.h"
 
 namespace ui::console::command
 {
@@ -17,7 +17,7 @@ Execution AddExcursionCommand::execute()
 {
     std::string id = mConsole.read("Insert Id");
     std::string description = mConsole.read("Insert Description");
-    std::string date = mConsole.read("Insert Date");
+    std::string date = mConsole.read("Insert Date " + DateUtils::kDateFormat);
     long price = mConsole.readInt("Insert price");
     int durationDays = mConsole.readInt("Insert duration");
     std::shared_ptr<Excursion> excursion =

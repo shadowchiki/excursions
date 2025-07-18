@@ -1,6 +1,6 @@
 #pragma once
 
-#include <dao/excursiondao.h>
+#include <dao/ExcursionDao.h>
 #include <memory>
 #include "dao/file/FileDao.h"
 #include "utils/date/datefilterfactory.h"

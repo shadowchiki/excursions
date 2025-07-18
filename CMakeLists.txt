@@ -4,6 +4,7 @@ project(excursions)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(QT_QML_GENERATE_QMLLS_INI ON)
 
 add_executable(excursions main.cpp)
 
@@ -15,7 +16,7 @@ install(
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 target_include_directories(
- excursions 
+ excursions
   PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src
   PUBLIC ${CMAKE_SOURCE_DIR}/src)
 

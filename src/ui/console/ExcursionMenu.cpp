@@ -1,6 +1,6 @@
 #include "ExcursionMenu.hpp"
 #include <memory>
-#include "controller/excursioncontroller.h"
+#include "controller/ExcursionController.h"
 #include "ui/console/command/AddExcursionCommand.hpp"
 #include "ui/console/command/ExitMenuCommand.hpp"
 #include "ui/console/command/GetExcursionByDateCommand.hpp"

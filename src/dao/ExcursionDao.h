@@ -1,10 +1,9 @@
-#ifndef EXCURSIONDAO_H
-#define EXCURSIONDAO_H
+#pragma once
 
 #include <memory>
 #include <string>
 #include <vector>
-#include "model/excursion.h"
+#include <model/excursion.h>
 
 class ExcursionDao
 {
@@ -16,5 +15,3 @@ public:
         std::string endDate) = 0;
     virtual void add(std::shared_ptr<Excursion> excursion) = 0;
 };
-
-#endif  // EXCURSIONDAO_H

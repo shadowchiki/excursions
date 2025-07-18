@@ -1,7 +1,7 @@
 #pragma once
 
 #include <memory>
-#include "controller/excursioncontroller.h"
+#include "controller/ExcursionController.h"
 #include "ui/Command.hpp"
 #include "ui/console/Console.hpp"
 

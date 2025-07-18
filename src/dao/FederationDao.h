@@ -1,4 +1,5 @@
 #pragma once
+
 #include <model/federation.h>
 #include <memory>
 #include <vector>

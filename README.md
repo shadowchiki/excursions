@@ -1,5 +1,4 @@
 # excursions
-
 El centro excursionista Senderos y Montañas se dedica a organizar excursiones para
 sus socios y necesita implementar una aplicación para gestionar sus actividades.
 Nuestra empresa ha sido seleccionada para desarrollar una aplicación de escritorio
@@ -7,11 +6,13 @@ basada en Java para gestionar los socios, así como las inscripciones a las excu
 que se inscriben los socios.
 Los datos que se gestionaran en la aplicación se dividen en excursiones, socios,
 seguros, federaciones e inscripciones. <br>
+
 # Excursiones <br>
 las excursiones pueden ser de uno o varios días y cada excursión tiene su precio de
 inscripción, así pues, los datos básicos de las excursiones son un código alfanumérico,
 descripción, fecha, número de días y el precio de la inscripción.
 <br>
+
 # Socios <br>
 Los socios pueden ser federados, estándares o infantil. Los datos que se almacenarán
 de cada socio serán el número de socio y el nombre. Existen tres tipos de socios:<br>
@@ -27,10 +28,13 @@ i no tendrán seguro ya que están cubiertos por el seguro del padre o de la mad
 por lo tanto, se deberá guardar el número de socio de alguno de ellos<br>
 
 # Seguros <br>
+
 Los datos básicos de los seguros son un tipo y un precio. Solo hay dos tipos de seguro
 Básico y Completo.<br>
+
 # Federaciones<br>
 Los datos básicos de las federaciones son un código alfanumérico y un nombre.
+
 # Inscripciones<br>
 Para simplificar la aplicación se considerará que un socio debe realizar una inscripción
 para cada excursión que quiera realizar.

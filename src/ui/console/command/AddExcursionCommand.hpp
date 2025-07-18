@@ -1,14 +1,7 @@
-/**
- * @par Copyright:
- *   This source code is covered by intellectual property rights and its
- *   distribution is limited to Indra. Other disclosure requests for this
- *   information are subject to the prior written approval of the parties
- *   listed above.
- */
 #pragma once
 
 #include <memory>
-#include "controller/excursioncontroller.h"
+#include "controller/ExcursionController.h"
 #include "ui/Command.hpp"
 #include "ui/console/Console.hpp"
 namespace ui::console::command

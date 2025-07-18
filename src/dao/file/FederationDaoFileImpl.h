@@ -1,5 +1,5 @@
 #pragma once
-#include <dao/federationdao.h>
+#include <dao/FederationDao.h>
 #include "dao/file/FileDao.h"
 #include "model/federation.h"
 

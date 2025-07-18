@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 add_library(
   dao-file SHARED
-  excursiondaofileimpl.cpp excursiondaofileimpl.h federationdaofileimpl.cpp
-  federationdaofileimpl.h FileDao.h FileDao.cpp)
+  ExcursionDaoFileImpl.cpp ExcursionDaoFileImpl.h FederationDaoFileImpl.cpp
+  FederationDaoFileImpl.h FileDao.h FileDao.cpp)
 
 target_link_libraries(
   dao-file

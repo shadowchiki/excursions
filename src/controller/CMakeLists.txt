@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-add_library(controller-excursion SHARED excursioncontroller.cpp excursioncontroller.h)
+add_library(controller-excursion SHARED ExcursionController.cpp ExcursionController.h)
 
 target_link_libraries(controller-excursion PUBLIC dao-file)
 
