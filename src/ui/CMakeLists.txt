@@ -8,3 +8,4 @@ target_include_directories(
   PUBLIC ${CMAKE_SOURCE_DIR}/src)
 
 add_subdirectory(console)
+add_subdirectory(qt)

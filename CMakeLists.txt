@@ -8,7 +8,7 @@ set(QT_QML_GENERATE_QMLLS_INI ON)
 
 add_executable(excursions main.cpp)
 
-target_link_libraries(excursions utils-date dao-file ui-console)
+target_link_libraries(excursions PUBLIC utils-date PUBLIC dao-file PUBLIC ui-console PUBLIC ui-qt)
 
 install(
   TARGETS excursions
