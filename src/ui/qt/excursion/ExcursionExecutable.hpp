@@ -1,32 +1,27 @@
 #pragma once
+#include <controller/ExcursionController.h>
 #include <qqmlintegration.h>
 #include <QList>
 #include <QObject>
 #include <QQuickItem>
+#include <QStringListModel>
 
 namespace ui::qt::excursion
 {
-class ExcursionExecutable : public QQuickItem
+class ExcursionExecutable : public QObject
 {
     Q_OBJECT
     QML_ELEMENT
 
 public:
-    Q_PROPERTY(QString title READ tittle WRITE setTittle NOTIFY tittleChange);
-
-    ExcursionExecutable(QQuickItem* parent = nullptr);
+    ExcursionExecutable(QObject* parent = nullptr);
     virtual ~ExcursionExecutable() = default;
 
-    QString tittle();
-    void setTittle(QString& tittle);
-
-signals:
-    void tittleChange();
-
 public slots:
-    QList<QString> findExcursions();
+    QStringList findExcursions(QString startDate, QString endDate);
 
 private:
-    QString mTittle;
+    QStringList mNames;
+    controller::excursion::ExcursionController controller;
 };
 }  // namespace ui::qt::excursion

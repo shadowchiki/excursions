@@ -12,8 +12,7 @@ Execution QtView::init(int argc, char* argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    // qmlRegisterType<excursion::ExcursionExecutable>(
-    //     "ExcursionExecutable", 1, 0, "ExcursionExecutable");
+    engine.addImportPath(QString("%1/excursion").arg(QGuiApplication::applicationDirPath()));
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,

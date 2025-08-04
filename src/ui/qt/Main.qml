@@ -1,68 +1,58 @@
 import QtQuick.Controls 2.15
-import QtQuick.Layouts 2.15
 import QtQuick 2.15
-import excursion 1.0
-import common 1.0 as Common
+import common 1.0
 
 ApplicationWindow {
-    id: main_window
+    id: root
     visible: true
-    width: 900
-    height: 700
+    width: styleId.screenWidth
+    height: styleId.screenHeight
     title: "Excursions"
 
-    function testing() {
-    }
-
-    TabBar {
-        id: tabBar
-        currentIndex: stack.currentIndex
-        TabButton {
-            text: "Tab 1"
-        }
-        TabButton {
-            text: "Tab 2"
-        }
-    }
-
-    StackLayout {
-        id: stack
-        Layout.fillWidth: true
-        Layout.fillHeight: true
-        currentIndex: tabBar.currentIndex
+    background: Rectangle {
         anchors.fill: parent
+        color: "#D3D3D3"
+    }
 
-        ExcursionExecutable {
-            id: excursion
-            title: "Tittle From QML"
+    Style {
+        id: styleId
+    }
 
-            Row {
-                Label {
-                    text: excursion.title
-                    font.pixelSize: 20
-                    horizontalAlignment: Text.Center
-                }
-
-                Common.Button {
-                    title: "Testing live change"
-                    onClicked: {
-                        excursion.title = "Changind tittle from a button";
-                        main_window.testing();
-                    }
-                }
-                Common.Button {
-                    title: "Button2 with other text"
-                    onClicked: {
-                        console.log("Texting loggin in console");
-                    }
-                }
-            }
+    Header {
+        id: mainHeader
+        width: parent.width - mainMenu.width
+        height: 65
+        anchors {
+            right: parent.right
+            top: parent.top
         }
+    }
 
-        Label {
-            text: "Configuración"
-            font.pixelSize: 20
-            horizontalAlignment: Text.Center
+    MainMenu {
+        id: mainMenu
+        height: parent.height
+        anchors {
+            top: parent.top
+            left: parent.left
+        }
+    }
+
+    Body {
+        id: body
+        anchors {
+            top: mainHeader.bottom
+            right: parent.right
+            bottom: parent.bottom
+            left: mainMenu.right
+            margins: 16
+        }
+    }
+
+    Connections {
+        target: mainMenu
+        function onMainContentChanged(text) {
+            mainHeader.actualMenu = text;
+            body.currentBody = text;
         }
     }
 }

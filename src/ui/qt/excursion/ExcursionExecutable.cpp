@@ -3,35 +3,24 @@
 namespace ui::qt::excursion
 {
 
-ExcursionExecutable::ExcursionExecutable(QQuickItem* parent)
-    : QQuickItem(parent)
-    , mTittle()
+ExcursionExecutable::ExcursionExecutable(QObject* parent)
+    : QObject(parent)
+    , mNames()
+    , controller()
 {
 }
 
-QString ExcursionExecutable::tittle()
+QStringList ExcursionExecutable::findExcursions(QString startDate, QString endDate)
 {
-    return mTittle;
-}
+    mNames.clear();
+    auto excursions = controller.getByDates(startDate.toStdString(), endDate.toStdString());
 
-void ExcursionExecutable::setTittle(QString& tittle)
-{
-    if (tittle != mTittle)
+    for (auto excursion : excursions)
     {
-        mTittle = tittle;
-        emit tittleChange();
+        mNames.push_back(QString::fromStdString(excursion->getDescription()));
     }
-}
 
-QList<QString> ExcursionExecutable::findExcursions()
-{
-    QList<QString> names;
-    names.push_back("Excursion1");
-    names.push_back("Excursion2");
-    names.push_back("Excursion3");
-    names.push_back("Excursion4");
-    names.push_back("Excursion5");
-    return names;
+    return mNames;
 }
 
 }  // namespace ui::qt::excursion

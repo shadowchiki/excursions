@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.21)
 
-qt_add_qml_module(ui-qt-excursion
+qt_add_qml_module(ui-qt-excursion SHARED
     URI excursion
     VERSION 1.0
     QML_FILES
         Excursion.qml
+        ExcursionList.qml
     SOURCES
         ExcursionExecutable.cpp
         ExcursionExecutable.hpp
@@ -20,4 +21,11 @@ set_target_properties(ui-qt-excursion PROPERTIES
 )
 
 target_include_directories(ui-qt-excursion PUBLIC ${CMAKE_SOURCE_DIR}/src)
+
+include(GNUInstallDirs)
+install(TARGETS ui-qt-excursion
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
 
