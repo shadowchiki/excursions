@@ -2,8 +2,9 @@ import QtQuick 2.15
 
 QtObject {
     id: root
-    property int screenWidth: 1920
-    property int screenHeight: 1080
+    property int screenWidth: 1650
+    property int screenHeight: 850
+    
 
     property real scaleFactor: 1.0
     property real designAspectRatio: (root.screenWidth / root.screenHeight)

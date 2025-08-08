@@ -9,7 +9,7 @@ Item {
     ListView {
         id: listView
         height: 500
-        // anchors.fill: parent
+        anchors.fill: parent
 
         model: root.excursionModel
         highlightFollowsCurrentItem: true

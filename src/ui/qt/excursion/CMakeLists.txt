@@ -6,6 +6,9 @@ qt_add_qml_module(ui-qt-excursion SHARED
     QML_FILES
         Excursion.qml
         ExcursionList.qml
+        TextBlock.qml
+        DateSelector.qml
+        Shadow.qml
     SOURCES
         ExcursionExecutable.cpp
         ExcursionExecutable.hpp

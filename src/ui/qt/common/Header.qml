@@ -12,7 +12,7 @@ Item {
     }
 
     RectangularShadow {
-      anchors.fill: background
+        anchors.fill: background
         offset.y: -5
         blur: 30
         spread: 5
@@ -86,6 +86,7 @@ Item {
         }
         sourceComponent: Frame {
             anchors.fill: parent
+            z: 10000
             background: Image {
                 width: styleId.resize(sourceSize.width)
                 height: styleId.resize(sourceSize.height)

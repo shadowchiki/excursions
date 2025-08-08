@@ -8,14 +8,14 @@ Item {
     signal mainContentChanged(string text)
 
     Style {
-        id: style
+        id: styleId
     }
 
     Rectangle {
         id: buttonMenuListBg
-        width: style.resize(250)
-        height: style.resize(800)
-        color: style.mainColor
+        width: styleId.resize(250)
+        height: styleId.resize(parent.height - (parent.height / 4))
+        color: styleId.mainColor
         ButtonMenuList {
             id: buttonMenuList
             anchors.centerIn: parent
@@ -42,8 +42,7 @@ Item {
     Connections {
         target: buttonMenuList
         function onItemClicked(item) {
-          root.mainContentChanged(item.text)
+            root.mainContentChanged(item.text);
         }
     }
-
 }
