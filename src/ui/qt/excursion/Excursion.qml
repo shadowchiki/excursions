@@ -14,13 +14,6 @@ Item {
         id: styleId
     }
 
-    Shadow {}
-
-    Rectangle {
-        anchors.fill: parent
-        border.color: styleId.grey
-    }
-
     Text {
         id: textoSaludo
         text: root.mensaje
@@ -37,8 +30,10 @@ Item {
     ExcursionList {
         id: excursionList
         width: parent.width
+        height: parent.height
         excursionModel: dateSelector.excursionModelFiltered
         anchors.top: dateSelector.bottom
         anchors.bottom: parent.bottom
+        anchors.topMargin: 20
     }
 }

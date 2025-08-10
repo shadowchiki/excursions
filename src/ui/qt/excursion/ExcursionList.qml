@@ -8,20 +8,31 @@ Item {
 
     ListView {
         id: listView
-        height: 500
-        anchors.fill: parent
+        width: parent.width / 2
+        height: parent.height
+        anchors.horizontalCenter: parent.horizontalCenter
+        spacing: 10
 
         model: root.excursionModel
-        highlightFollowsCurrentItem: true
 
         delegate: ItemDelegate {
             width: parent.width
             height: 65 - listView.spacing
-            background: null
-            contentItem: Row {
+            background: Rectangle {
+              Shadow{
+                z: -1
+              }
+              border {
+                color: "black"
+                width: 2
+              }
+              radius: 15
+              color: "white"
+            }
+            contentItem: Item {
                 anchors.fill: parent
                 anchors.leftMargin: 20
-                spacing: 5
+                anchors.rightMargin: 20
                 Text {
                     id: text
                     text: modelData
@@ -31,12 +42,37 @@ Item {
                     font.pixelSize: 16
                 }
                 Row {
-                  anchors.verticalCenter: parent.verticalCenter
+                  spacing: 6
+                    anchors.right: parent.right
+                    anchors.verticalCenter: parent.verticalCenter
                     Rectangle {
                         width: 25
                         height: 25
+                        color: "Red"
                         MouseArea {
-                          anchors.fill:parent
+                            anchors.fill: parent
+                            onClicked: {
+                                console.log("Editing ", modelData);
+                            }
+                        }
+                    }
+                    Rectangle {
+                        width: 25
+                        height: 25
+                        color: "Green"
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                console.log("Editing ", modelData);
+                            }
+                        }
+                    }
+                    Rectangle {
+                        width: 25
+                        height: 25
+                        color: "blue"
+                        MouseArea {
+                            anchors.fill: parent
                             onClicked: {
                                 console.log("Editing ", modelData);
                             }
