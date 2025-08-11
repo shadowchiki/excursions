@@ -1,14 +1,11 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import common
 
 Item {
     id: root
-    width: styleId.resize(parent.width)
-    height: styleId.resize(parent.height / 2)
-
-    Style {
-        id: styleId
-    }
+    width: Style.resize(parent.width)
+    height: Style.resize(parent.height / 2)
 
     signal itemClicked(var button)
 
@@ -36,7 +33,7 @@ Item {
         anchors.fill: parent
         highlight: Item {
             width: parent.width
-            height: styleId.resize((root.height / menuModel.count) - listView.spacing)
+            height: Style.resize((root.height / menuModel.count) - listView.spacing)
             Rectangle {
                 anchors.fill: parent
                 opacity: .6
@@ -44,7 +41,7 @@ Item {
             Rectangle {
                 width: 4
                 height: parent.height
-                color: styleId.fontContrastColor
+                color: Style.fontContrastColor
             }
         }
 
@@ -54,25 +51,25 @@ Item {
 
         delegate: ItemDelegate {
             width: parent.width
-            height: styleId.resize((root.height / menuModel.count) - listView.spacing)
+            height: Style.resize((root.height / menuModel.count) - listView.spacing)
             background: null
             contentItem: Row {
                 anchors.fill: parent
-                anchors.leftMargin: styleId.resize(20)
+                anchors.leftMargin: Style.resize(20)
                 spacing: 5
 
                 Add {
                     id: image
                     anchors.verticalCenter: parent.verticalCenter
-                    color: styleId.fontContrastColor
+                    color: Style.fontContrastColor
                 }
                 Text {
                     id: text
                     text: model.text
                     wrapMode: Text.Wrap
                     anchors.verticalCenter: parent.verticalCenter
-                    color: styleId.fontContrastColor
-                    font.pixelSize: styleId.fontSizeS
+                    color: Style.fontContrastColor
+                    font.pixelSize: Style.fontSizeS
                 }
             }
             onClicked: {

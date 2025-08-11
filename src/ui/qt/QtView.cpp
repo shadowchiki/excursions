@@ -2,7 +2,6 @@
 #include <qqml.h>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <excursion/ExcursionExecutable.hpp>
 
 namespace ui::qt
 {

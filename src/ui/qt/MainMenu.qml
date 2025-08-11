@@ -1,5 +1,6 @@
 pragma ComponentBehavior: Bound
 import QtQuick 2.15
+import common
 
 Item {
     id: root
@@ -7,15 +8,11 @@ Item {
 
     signal mainContentChanged(string text)
 
-    Style {
-        id: styleId
-    }
-
     Rectangle {
         id: buttonMenuListBg
-        width: styleId.resize(250)
-        height: styleId.resize(parent.height - (parent.height / 4))
-        color: styleId.mainColor
+        width: Style.resize(250)
+        height: Style.resize(parent.height - (parent.height / 4))
+        color: Style.mainColor
         ButtonMenuList {
             id: buttonMenuList
             anchors.centerIn: parent
@@ -32,11 +29,11 @@ Item {
     UserInfo {
         width: userInfoBg.width
         anchors.top: userInfoBg.top
-        anchors.topMargin: -styleId.resize(32.5)
+        anchors.topMargin: -Style.resize(32.5)
         name: "Alejandro"
         direction: "Calle 1"
         job: "Software Architect"
-        userImagePath: styleId.icon("Account")
+        userImagePath: Style.icon("Account")
     }
 
     Connections {

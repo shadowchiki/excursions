@@ -1,15 +1,18 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import common
 
 Item {
     id: root
+    height: listView.height
 
     property var excursionModel
+    readonly property int rowHeight: 65 - listView.spacing
 
     ListView {
         id: listView
         width: parent.width / 2
-        height: parent.height
+        height: (root.rowHeight * 5) + (listView.spacing * (5 - 1))
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: 10
 
@@ -17,17 +20,17 @@ Item {
 
         delegate: ItemDelegate {
             width: parent.width
-            height: 65 - listView.spacing
+            height: rowHeight
             background: Rectangle {
-              Shadow{
-                z: -1
-              }
-              border {
-                color: "black"
-                width: 2
-              }
-              radius: 15
-              color: "white"
+                Shadow {
+                    z: -1
+                }
+                border {
+                    color: "black"
+                    width: 2
+                }
+                radius: 15
+                color: "white"
             }
             contentItem: Item {
                 anchors.fill: parent
@@ -42,7 +45,7 @@ Item {
                     font.pixelSize: 16
                 }
                 Row {
-                  spacing: 6
+                    spacing: 6
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
                     Rectangle {

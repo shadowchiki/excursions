@@ -1,18 +1,14 @@
 import QtQuick.Effects
 import QtQuick 2.15
-import common as Common
+import common
 
 RectangularShadow {
     id: root
     anchors.fill: parent
 
-    Common.Style {
-        id: styleId
-    }
-
     property Rectangle background: Rectangle {
         anchors.fill: parent
-        color: styleId.grey
+        color: Style.grey
     }
 
     offset.y: -5

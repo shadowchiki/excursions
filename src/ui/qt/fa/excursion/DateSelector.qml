@@ -1,11 +1,10 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import common as Common
+import common
 
 Row {
     id: root
-    spacing: styleId.resize(15)
-    anchors.horizontalCenter: parent.horizontalCenter
+    spacing: Style.resize(15)
 
     property ExcursionExecutable controller
 
@@ -13,10 +12,6 @@ Row {
 
     Component.onCompleted: {
         root.excursionModelFiltered = root.controller.findExcursions(startDate.textFromEditText, endDate.textFromEditText);
-    }
-
-    Common.Style {
-        id: styleId
     }
 
     TextBlock {
@@ -31,11 +26,11 @@ Row {
         anchors.verticalCenter: parent.verticalCenter
         contentItem: Text {
             font.bold: true
-            font.pixelSize: styleId.fontSizeM
+            font.pixelSize: Style.fontSizeM
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             text: "Filter Excursions"
-            color: send.hovered ? styleId.mainColor : "#FFF"
+            color: send.hovered ? Style.mainColor : "#FFF"
             Behavior on color {
                 ColorAnimation {
                     duration: 300
@@ -43,8 +38,8 @@ Row {
             }
         }
         background: Rectangle {
-            color: send.hovered ? "#99FFFFFF" : styleId.mainColor
-            radius: styleId.resize(25)
+            color: send.hovered ? "#99FFFFFF" : Style.mainColor
+            radius: Style.resize(25)
             Behavior on color {
                 ColorAnimation {
                     duration: 300

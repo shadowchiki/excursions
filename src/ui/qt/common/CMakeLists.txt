@@ -1,17 +1,15 @@
 cmake_minimum_required(VERSION 3.21)
 
+set_source_files_properties(Style.qml PROPERTIES QT_QML_SINGLETON_TYPE TRUE)
+
 qt_add_qml_module(ui-qt-common
     URI common
     VERSION 1.0
     QML_FILES
-      Body.qml
       Button.qml
-      Header.qml
-      MainMenu.qml
-      ButtonMenu.qml
-      ButtonMenuList.qml
-      UserInfo.qml
       Style.qml
+        TextBlock.qml
+        Shadow.qml
       resources/Add.qml
     OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/common
 )
@@ -27,9 +25,9 @@ resources/Secure.svg
 resources/dropdown.png
 )
 
+
 target_link_libraries(ui-qt-common
     PRIVATE Qt6::Quick
-    PUBLIC ui-qt-excursion
 )
 
 target_include_directories(ui-qt-common PUBLIC ${CMAKE_SOURCE_DIR}/src)

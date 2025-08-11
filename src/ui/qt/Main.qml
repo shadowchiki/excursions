@@ -1,21 +1,17 @@
 import QtQuick.Controls 2.15
 import QtQuick 2.15
-import common 1.0
+import common
 
 ApplicationWindow {
     id: root
     visible: true
-    width: styleId.screenWidth
-    height: styleId.screenHeight
+    width: Style.screenWidth
+    height: Style.screenHeight
     title: "Excursions"
 
     background: Rectangle {
         anchors.fill: parent
         color: "#D3D3D3"
-    }
-
-    Style {
-        id: styleId
     }
 
     Header {

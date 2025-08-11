@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import common
 
 Item {
     id: root
@@ -8,13 +9,9 @@ Item {
     property string job
     property string userImagePath
 
-    Style {
-        id: styleId
-    }
-
     Rectangle {
         anchors.fill: parent
-        color: styleId.fontContrastColor
+        color: Style.fontContrastColor
     }
 
     Rectangle {
@@ -35,60 +32,60 @@ Item {
         id: column
         anchors.top: userImageRectangle.bottom
         anchors.left: parent.left
-        anchors.topMargin: styleId.resize(35)
-        anchors.leftMargin: styleId.resize(20)
-        spacing: styleId.resize(15)
+        anchors.topMargin: Style.resize(35)
+        anchors.leftMargin: Style.resize(20)
+        spacing: Style.resize(15)
 
         Row {
-            spacing: styleId.resize(5)
+            spacing: Style.resize(5)
 
             Add {
                 id: image
                 anchors.verticalCenter: parent.verticalCenter
-                color: styleId.mainColor
+                color: Style.mainColor
             }
             Text {
                 id: text
                 text: root.name
                 wrapMode: Text.Wrap
                 anchors.verticalCenter: parent.verticalCenter
-                color: styleId.mainColor
-                font.pixelSize: styleId.fontSizeS
+                color: Style.mainColor
+                font.pixelSize: Style.fontSizeS
             }
         }
 
         Row {
-            spacing: styleId.resize(5)
+            spacing: Style.resize(5)
 
             Add {
                 id: image2
                 anchors.verticalCenter: parent.verticalCenter
-                color: styleId.mainColor
+                color: Style.mainColor
             }
             Text {
                 id: text2
                 text: root.direction
                 wrapMode: Text.Wrap
                 anchors.verticalCenter: parent.verticalCenter
-                color: styleId.mainColor
-                font.pixelSize: styleId.fontSizeS
+                color: Style.mainColor
+                font.pixelSize: Style.fontSizeS
             }
         }
         Row {
-            spacing: styleId.resize(5)
+            spacing: Style.resize(5)
 
             Add {
                 id: image3
                 anchors.verticalCenter: parent.verticalCenter
-                color: styleId.mainColor
+                color: Style.mainColor
             }
             Text {
                 id: text3
                 text: root.job
                 wrapMode: Text.Wrap
                 anchors.verticalCenter: parent.verticalCenter
-                color: styleId.mainColor
-                font.pixelSize: styleId.fontSizeS
+                color: Style.mainColor
+                font.pixelSize: Style.fontSizeS
             }
         }
     }

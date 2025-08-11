@@ -6,9 +6,7 @@ qt_add_qml_module(ui-qt-excursion SHARED
     QML_FILES
         Excursion.qml
         ExcursionList.qml
-        TextBlock.qml
         DateSelector.qml
-        Shadow.qml
     SOURCES
         ExcursionExecutable.cpp
         ExcursionExecutable.hpp
@@ -18,6 +16,7 @@ qt_add_qml_module(ui-qt-excursion SHARED
 target_link_libraries(ui-qt-excursion
     PRIVATE Qt6::Quick
     PUBLIC controller-excursion
+    PUBLIC ui-qt-common
 )
 set_target_properties(ui-qt-excursion PROPERTIES
     QT_QMLCACHEGEN_ARGUMENTS "--direct-calls"

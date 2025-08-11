@@ -2,25 +2,34 @@ import QtQuick.Controls 2.15 as Control
 import QtQuick 2.15
 
 Control.Button {
-    id: button
-    width: 225
-    height: 60
+    id: root
+    width: 250
+    height: 40
 
     property string backgroundColor: "#fff"
     property string title: "Button"
 
+    anchors.verticalCenter: parent.verticalCenter
     contentItem: Text {
-        text: button.title
-        font.pixelSize: button.font.pixelSize
-        font.family: button.font.family
-        verticalAlignment: Text.AlignVCenter
+        font.bold: true
+        font.pixelSize: Style.fontSizeM
         horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        text: root.title
+        color: root.hovered ? Style.mainColor : "#FFF"
+        Behavior on color {
+            ColorAnimation {
+                duration: 300
+            }
+        }
     }
-
     background: Rectangle {
-        color: button.backgroundColor
-        border.color: button.backgroundColor
-        border.width: 1
-        radius: 50
+        color: root.hovered ? "#99FFFFFF" : Style.mainColor
+        radius: Style.resize(25)
+        Behavior on color {
+            ColorAnimation {
+                duration: 300
+            }
+        }
     }
 }

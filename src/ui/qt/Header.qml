@@ -1,15 +1,12 @@
 import QtQuick 2.15
 import QtQuick.Controls
 import QtQuick.Effects
+import common
 
 Item {
     id: root
 
     property string actualMenu
-
-    Style {
-        id: styleId
-    }
 
     RectangularShadow {
         anchors.fill: background
@@ -22,19 +19,19 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: styleId.grey
+        color: Style.grey
     }
 
     Text {
         id: actualMenuTxt
         text: qsTr(root.actualMenu)
         font {
-            pixelSize: styleId.fontSizeL
+            pixelSize: Style.fontSizeL
         }
         anchors {
             left: parent.left
             verticalCenter: parent.verticalCenter
-            leftMargin: styleId.resize(50)
+            leftMargin: Style.resize(50)
         }
     }
 
@@ -49,8 +46,8 @@ Item {
         Row {
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter
-            padding: styleId.resize(30)
-            spacing: styleId.resize(15)
+            padding: Style.resize(30)
+            spacing: Style.resize(15)
 
             Text {
                 text: qsTr("Settings")
@@ -70,12 +67,12 @@ Item {
 
     Loader {
         id: dropDownMenuLoader
-        width: styleId.resize(228)
-        height: styleId.resize(127)
+        width: Style.resize(228)
+        height: Style.resize(127)
         anchors.top: parent.top
-        anchors.topMargin: ((height / 2) + styleId.resize(10))
+        anchors.topMargin: ((height / 2) + Style.resize(10))
         anchors.right: parent.right
-        anchors.rightMargin: styleId.resize(45)
+        anchors.rightMargin: Style.resize(45)
         active: false
         opacity: active ? 1.0 : 0.0
         visible: (opacity > 0.0)
@@ -88,32 +85,32 @@ Item {
             anchors.fill: parent
             z: 10000
             background: Image {
-                width: styleId.resize(sourceSize.width)
-                height: styleId.resize(sourceSize.height)
-                source: styleId.gfx("dropdown")
+                width: Style.resize(sourceSize.width)
+                height: Style.resize(sourceSize.height)
+                source: Style.gfx("dropdown")
             }
 
             contentItem: Column {
                 anchors.top: parent.top
-                anchors.topMargin: styleId.resize(20)
+                anchors.topMargin: Style.resize(20)
                 anchors.left: parent.left
-                anchors.leftMargin: styleId.resize(30)
-                spacing: styleId.resize(8)
+                anchors.leftMargin: Style.resize(30)
+                spacing: Style.resize(8)
                 Label {
                     text: qsTr("Select theme")
                 }
                 Repeater {
                     model: ["Green", "Orange"]
                     delegate: RadioButton {
-                        width: styleId.resize(100)
-                        height: styleId.resize(26)
+                        width: Style.resize(100)
+                        height: Style.resize(26)
                         text: qsTr("%1").arg(modelData)
-                        checked: (styleId.theme === text.toLowerCase())
+                        checked: (Style.theme === text.toLowerCase())
                         onClicked: {
                             if (modelData === "Green")
-                            // styleId.setGreenTheme();
+                            // Style.setGreenTheme();
                             {} else
-                            // styleId.setOrangeTheme();
+                            // Style.setOrangeTheme();
                             {}
                             dropDownMenuLoader.active = false;
                         }

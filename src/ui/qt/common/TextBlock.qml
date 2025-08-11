@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import common as Common
+import common
 
 Item {
     id: root
@@ -15,10 +15,6 @@ Item {
         text: root.labelText + "\nformat: YYYY-MM-DD"
     }
 
-    Common.Style {
-        id: styleId
-    }
-
     Column {
         id: column
         spacing: 10
@@ -28,9 +24,9 @@ Item {
             width: textMetrics.width
             height: label.implicitHeight
             text: root.labelText + "\nformat: YYYY-MM-DD"
-            font.pixelSize: styleId.fontSizeM
+            font.pixelSize: Style.fontSizeM
             verticalAlignment: Text.AlignVCenter
-            color: styleId.mainColor
+            color: Style.mainColor
         }
 
         TextField {
@@ -39,10 +35,10 @@ Item {
             height: label.implicitHeight
             wrapMode: TextEdit.Wrap
             background: Rectangle{
-              border.color: styleId.mainColor 
-              color: styleId.grey 
+              border.color: Style.mainColor 
+              color: Style.grey 
             }
-            color: styleId.mainColor
+            color: Style.mainColor
             onFocusChanged: {
                 if (!editText.focus)
                     root.textFromEditText = editText.text;

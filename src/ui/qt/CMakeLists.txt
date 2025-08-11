@@ -13,6 +13,12 @@ qt_add_qml_module(ui-qt SHARED
     VERSION 1.0
     QML_FILES
         Main.qml
+      Body.qml
+      Header.qml
+      MainMenu.qml
+      ButtonMenu.qml
+      ButtonMenuList.qml
+      UserInfo.qml
     SOURCES
         QtView.cpp
         QtView.hpp
@@ -23,10 +29,11 @@ qt_add_qml_module(ui-qt SHARED
 target_link_libraries(ui-qt
     PRIVATE Qt6::Quick
     PUBLIC ui
-    # PUBLIC ui-qt-excursion
+    PUBLIC ui-qt-excursion
+    PUBLIC ui-qt-common
 )
 
-add_subdirectory(excursion)
+add_subdirectory(fa)
 add_subdirectory(common)
 
 include(GNUInstallDirs)
