@@ -4,9 +4,11 @@ qt_add_qml_module(ui-qt-excursion SHARED
     URI excursion
     VERSION 1.0
     QML_FILES
-        Excursion.qml
+        Main.qml
         ExcursionList.qml
+        ExcursionListView.qml
         DateSelector.qml
+        AddExcursion.qml
     SOURCES
         ExcursionExecutable.cpp
         ExcursionExecutable.hpp

@@ -8,7 +8,16 @@ find_package(Qt6 REQUIRED COMPONENTS Gui Qml Quick)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
-qt_add_qml_module(ui-qt SHARED
+add_library(ui-qt SHARED
+        QtView.cpp
+        QtView.hpp)
+
+target_link_libraries(ui-qt
+    PRIVATE Qt6::Quick
+    PUBLIC ui
+)
+
+qt_add_qml_module(ui-qt-core SHARED
     URI main
     VERSION 1.0
     QML_FILES
@@ -19,16 +28,12 @@ qt_add_qml_module(ui-qt SHARED
       ButtonMenu.qml
       ButtonMenuList.qml
       UserInfo.qml
-    SOURCES
-        QtView.cpp
-        QtView.hpp
     OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/main
-    PLUGIN_TARGET ui-qt
+    # PLUGIN_TARGET ui-qt
 )
 
-target_link_libraries(ui-qt
+target_link_libraries(ui-qt-core
     PRIVATE Qt6::Quick
-    PUBLIC ui
     PUBLIC ui-qt-excursion
     PUBLIC ui-qt-common
 )
@@ -37,7 +42,7 @@ add_subdirectory(fa)
 add_subdirectory(common)
 
 include(GNUInstallDirs)
-install(TARGETS ui-qt
+install(TARGETS ui-qt-core
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

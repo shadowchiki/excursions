@@ -4,16 +4,15 @@ import common
 
 Item {
     id: root
-    width: parent.width
-    height: parent.height
-    anchors.centerIn: parent
+    anchors.fill: parent
 
-    property string mensaje: ""
-    property ExcursionExecutable controller: ExcursionExecutable {}
+    property ExcursionExecutable controller
+
+    signal addExcursionLaunched()
 
     Text {
         id: textoSaludo
-        text: root.mensaje
+        // text: root.mensaje
         font.pixelSize: 20
         horizontalAlignment: Text.Top
     }
@@ -61,6 +60,9 @@ Item {
                     duration: 300
                 }
             }
+        }
+        onClicked: {
+            root.addExcursionLaunched();
         }
     }
 }

@@ -1,5 +1,5 @@
 import QtQuick 2.15
-import excursion 1.0
+import excursion 1.0 as Excursion
 
 Item {
     id: root
@@ -16,14 +16,14 @@ Item {
 
     Component {
         id: excursion
-        Excursion {
+        Excursion.Main {
             mensaje: "Excursion Management"
         }
     }
 
     Component {
         id: federation
-        Excursion {
+        Excursion.Main {
             mensaje: "Federation Management"
         }
     }

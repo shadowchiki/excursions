@@ -61,6 +61,12 @@ Item {
 
             Text {
                 text: qsTr("ShutDown")
+                MouseArea{
+                  anchors.fill: parent
+                  onClicked: {
+                    Qt.quit()
+                  }
+                }
             }
         }
     }

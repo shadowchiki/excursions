@@ -1,5 +1,4 @@
 #include "QtView.hpp"
-#include <qqml.h>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
@@ -11,7 +10,6 @@ Execution QtView::init(int argc, char* argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    engine.addImportPath(QString("%1/excursion").arg(QGuiApplication::applicationDirPath()));
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,

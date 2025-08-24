@@ -1,11 +1,10 @@
-#include "ui/console/ConsoleView.hpp"
-#include "ui/qt/QtView.hpp"
+#include <factory/config/ConfFactory.hpp>
 
 int main(int argc, char** argv)
 {
-    // ui::console::ConsoleView console;
-    // console.init(argc, argv);
-    ui::qt::QtView qt;
-    qt.init(argc, argv);
+    factory::ConfFactory confFactory;
+    auto viewFactory = confFactory.viewFactory();
+    std::shared_ptr<ui::View> view = viewFactory->view();
+    view->init(argc, argv);
     return 0;
 }
