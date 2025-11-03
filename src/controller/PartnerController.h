@@ -1,6 +1,7 @@
 #pragma once
 
 // #include <dao/PartnerDao.h>
+#include "model/partner/partner.h"
 #include <memory>
 #include <vector>
 

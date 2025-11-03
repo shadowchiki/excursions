@@ -36,13 +36,26 @@ Item {
                 anchors.fill: parent
                 anchors.leftMargin: 20
                 anchors.rightMargin: 20
-                Text {
-                    id: text
-                    text: modelData
-                    wrapMode: Text.Wrap
-                    anchors.verticalCenter: parent.verticalCenter
-                    color: "blue"
-                    font.pixelSize: 16
+                Row {
+                    spacing: 10
+
+                    Text {
+                        id: text
+                        text: modelData.description
+                        wrapMode: Text.Wrap
+                        anchors.verticalCenter: parent.verticalCenter
+                        color: "blue"
+                        font.pixelSize: 16
+                    }
+
+                    Text {
+                        id: price
+                        text: modelData.price
+                        wrapMode: Text.Wrap
+                        anchors.verticalCenter: parent.verticalCenter
+                        color: "blue"
+                        font.pixelSize: 16
+                    }
                 }
                 Row {
                     spacing: 6
@@ -55,7 +68,7 @@ Item {
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
-                                console.log("Editing ", modelData);
+                                console.log("Editing ", modelData.description);
                             }
                         }
                     }
@@ -66,7 +79,7 @@ Item {
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
-                                console.log("Editing ", modelData);
+                                console.log("Editing ", modelData.description);
                             }
                         }
                     }

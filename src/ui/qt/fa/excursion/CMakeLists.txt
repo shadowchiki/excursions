@@ -11,6 +11,7 @@ qt_add_qml_module(ui-qt-excursion SHARED
         AddExcursion.qml
     SOURCES
         ExcursionExecutable.cpp
+        ExcursionEntity.cpp
         ExcursionExecutable.hpp
     OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/excursion
 )

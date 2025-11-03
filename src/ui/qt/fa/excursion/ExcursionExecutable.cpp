@@ -1,26 +1,31 @@
 #include "ExcursionExecutable.hpp"
+#include "ExcursionEntity.hpp"
 
-namespace ui::qt::excursion
-{
+#include <qcontainerfwd.h>
+#include <qqmllist.h>
 
-ExcursionExecutable::ExcursionExecutable(QObject* parent)
-    : QObject(parent)
-    , mNames()
-    , controller()
-{
+namespace ui::qt::excursion {
+
+ExcursionExecutable::ExcursionExecutable(QObject *parent)
+    : QObject(parent), mExcursions(), controller() {}
+
+QQmlListProperty<ExcursionEntity>
+ExcursionExecutable::findExcursions(QString startDate, QString endDate) {
+  auto excursions =
+      controller.getByDates(startDate.toStdString(), endDate.toStdString());
+  mExcursions.clear();
+
+  for (auto excursion : excursions) {
+    auto excursionPtr = new ExcursionEntity(this);
+    excursionPtr->setDescription(QString::fromStdString(excursion->getDescription()));
+    excursionPtr->setId(QString::fromStdString(excursion->getId()));
+    excursionPtr->setDate(QString::fromStdString(excursion->getDate()));
+    excursionPtr->setDurationDays(excursion->getDurationDays());
+    excursionPtr->setPrice(excursion->getPrice());
+    mExcursions.push_back(excursionPtr);
+  }
+
+  return QQmlListProperty<ExcursionEntity>(this, &mExcursions);
 }
 
-QStringList ExcursionExecutable::findExcursions(QString startDate, QString endDate)
-{
-    mNames.clear();
-    auto excursions = controller.getByDates(startDate.toStdString(), endDate.toStdString());
-
-    for (auto excursion : excursions)
-    {
-        mNames.push_back(QString::fromStdString(excursion->getDescription()));
-    }
-
-    return mNames;
-}
-
-}  // namespace ui::qt::excursion
+} // namespace ui::qt::excursion
