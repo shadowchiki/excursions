@@ -1,17 +1,37 @@
 #include "ExcursionDaoFileImpl.h"
+#include <model/excursion.h>
+#include <utils/date/datefilterfactory.h>
+#include <functional>
 #include <memory>
 #include <string>
 #include <vector>
-#include <model/excursion.h>
-#include <utils/date/datefilterfactory.h>
+#include "dao/file/GenericFileDao_def.hpp"
 
 ExcursionDaoFileImpl::ExcursionDaoFileImpl()
     : ExcursionDao()
-    , FileDao()
-    , mExcursions()
     , mDateFilterFactory(std::make_unique<DateFilterFactory>())
+    , mDao(new GenericFileDao<std::shared_ptr<Excursion>>(
+          kFilePath,
+          std::bind(&ExcursionDaoFileImpl::saveExcursionCallback, this, std::placeholders::_1),
+          std::bind(&ExcursionDaoFileImpl::readExcursionCallback, this, std::placeholders::_1)))
 {
-    readFile();
+}
+
+std::string ExcursionDaoFileImpl::saveExcursionCallback(std::shared_ptr<Excursion> excursion)
+{
+    std::string saveExcursion = excursion->getId() + GenericFileDao<Excursion>::kSeparator
+        + excursion->getDescription() + GenericFileDao<Excursion>::kSeparator + excursion->getDate()
+        + GenericFileDao<Excursion>::kSeparator + std::to_string(excursion->getPrice())
+        + GenericFileDao<Excursion>::kSeparator + std::to_string(excursion->getDurationDays())
+        + GenericFileDao<Excursion>::kSeparator;
+    return saveExcursion;
+}
+
+std::shared_ptr<Excursion> ExcursionDaoFileImpl::readExcursionCallback(
+    std::vector<std::string> data)
+{
+    return std::make_shared<Excursion>(
+        data.at(0), data.at(1), data.at(2), std::stol(data.at(3)), std::stoi(data.at(4)));
 }
 
 std::vector<std::shared_ptr<Excursion>> ExcursionDaoFileImpl::getByDates(
@@ -20,7 +40,8 @@ std::vector<std::shared_ptr<Excursion>> ExcursionDaoFileImpl::getByDates(
 {
     auto* dateFilterFactory = mDateFilterFactory->getFilter(startDate, endDate);
     std::vector<std::shared_ptr<Excursion>> excursionFiltered;
-    for (auto excursion : mExcursions)
+
+    for (auto excursion : mDao->data())
     {
         if (dateFilterFactory->filter(excursion->getDate()))
         {
@@ -28,30 +49,22 @@ std::vector<std::shared_ptr<Excursion>> ExcursionDaoFileImpl::getByDates(
         }
     }
 
+    delete dateFilterFactory;
     return excursionFiltered;
 }
 
 void ExcursionDaoFileImpl::add(std::shared_ptr<Excursion> excursion)
 {
-    clear();
-    mData.push_back(excursion->getId());
-    mData.push_back(excursion->getDescription());
-    mData.push_back(excursion->getDate());
-    mData.push_back(std::to_string(excursion->getPrice()));
-    mData.push_back(std::to_string(excursion->getDurationDays()));
-    this->saveOnFile();
-    mExcursions.clear();
-    readFile();
+    mDao->save(excursion);
 }
 
-void ExcursionDaoFileImpl::map()
+void ExcursionDaoFileImpl::remove(std::shared_ptr<Excursion> excursion)
 {
-    std::shared_ptr<Excursion> excursion = std::make_shared<Excursion>(
-        mData.at(0), mData.at(1), mData.at(2), stol(mData.at(3)), stoi(mData.at(4)));
-    mExcursions.push_back(excursion);
+    mDao->remove(excursion);
 }
 
-std::string ExcursionDaoFileImpl::filePath()
+std::optional<std::shared_ptr<Excursion>> ExcursionDaoFileImpl::findById(std::string id)
 {
-    return kFilePath;
+    return mDao->findBy([&id](std::shared_ptr<Excursion> excursion)
+                        { return excursion->getId().compare(id) == 0; });
 }

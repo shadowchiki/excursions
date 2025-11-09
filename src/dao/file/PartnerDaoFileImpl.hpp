@@ -1,11 +1,8 @@
 #pragma once
 
 #include "dao/PartnerDao.h"
-#include "dao/file/FileDao.h"
 
-class PartnertDaoFileImpl
-    : public PartnerDao
-    , public FileDao
+class PartnertDaoFileImpl : public PartnerDao
 {
 public:
     PartnertDaoFileImpl() = default;

@@ -6,6 +6,7 @@ class StartDateFilter : public DateFilter
 {
 public:
     StartDateFilter(std::string startDate);
+    virtual ~StartDateFilter() = default;
     virtual bool filter(std::string date);
 };
 

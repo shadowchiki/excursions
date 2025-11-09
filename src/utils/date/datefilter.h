@@ -11,9 +11,10 @@ protected:
     std::string endDate;
 
 public:
-    DateFilter(std::string startDate,
-               std::string endDate);
+    DateFilter(std::string startDate, std::string endDate);
+    virtual ~DateFilter() = default;
+
     virtual bool filter(std::string date) = 0;
 };
 
-#endif // DATEFILTER_H
+#endif  // DATEFILTER_H

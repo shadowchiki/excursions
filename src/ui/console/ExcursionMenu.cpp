@@ -19,19 +19,4 @@ ExcursionMenu::ExcursionMenu(std::string tittle)
     command::MenuCommand::addAction(std::make_shared<command::AddExcursionCommand>(mController));
 }
 
-Execution ExcursionMenu::execute()
-{
-    return command::MenuCommand::execute();
-}
-
-Execution ExcursionMenu::run()
-{
-    return command::MenuCommand::run();
-}
-
-void ExcursionMenu::addAction(std::shared_ptr<Command> newCommand)
-{
-    command::MenuCommand::addAction(newCommand);
-}
-
 }  // namespace ui::console

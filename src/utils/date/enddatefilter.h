@@ -6,7 +6,8 @@ class EndDateFilter : public DateFilter
 {
 public:
     EndDateFilter(std::string endDate);
+    virtual ~EndDateFilter() = default;
     bool filter(std::string date);
 };
 
-#endif // ENDDATEFILTER_H
+#endif  // ENDDATEFILTER_H
